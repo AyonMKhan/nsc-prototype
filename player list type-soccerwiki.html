@@ -36,9 +36,9 @@ there must be a page selector menu-button on top of the player table
       <div class="row">
 
         <div class="col-md-9">
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Top Male Players</a></li>
-            <li><a href="#">Top Female Players</a></li>
+          <ul class="nav nav-tabs tabs">
+            <li class="active" data-tab="tab-male"><a href="#">Top Male Players</a></li>
+            <li data-tab="tab-female"><a href="#">Top Female Players</a></li>
 
             <div class = "btn-group">
              <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown">
@@ -51,13 +51,45 @@ there must be a page selector menu-button on top of the player table
                 <li><a href = "#">Page 3</a></li>
                 <li><a href = "#">Page 4</a></li>
 
-                <li class = "divider"></li>
-                <li><a href = "#">Home</a></li>
              </ul>
            </div><!--end of div class button group-->
           </ul>
 
-          <div class="table-responsive">
+          <div id="tab-male" class="table-responsive">
+            <table class="table">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                </tr>
+                <tr>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                </tr>
+                <tr>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                </tr>
+                <tr>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Mamunul Islam.jpg" /><a href="#">Mamunul Islam</a></div></td>
+                  <td class="player"><div class="player-container text-center"><img class="playerImg img-circle" src="./assets/img/Jamal Bhuyan.jpg" /><a href="#">Jamal Bhuyan</a></div></td>
+                </tr>
+
+              </tbody>
+            </table><!-- end of table -->
+          </div><!--end of table responsive div-->
+
+          <div id="tab-female" class="table-responsive hidden">
             <table class="table">
               <thead>
               </thead>

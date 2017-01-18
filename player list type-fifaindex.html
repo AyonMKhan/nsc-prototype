@@ -36,9 +36,9 @@ there must be a page selector menu-button on top of the player table
       <div class="row">
 
         <div class="col-md-9">
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Male</a></li>
-            <li><a href="#">Female</a></li>
+          <ul class="nav nav-tabs tabs">
+            <li class="active" data-tab="tab-male"><a href="#">Male</a></li>
+            <li data-tab="tab-female"><a href="#">Female</a></li>
 
             <div class = "btn-group">
              <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown">
@@ -51,14 +51,98 @@ there must be a page selector menu-button on top of the player table
                 <li><a href = "#">Page 3</a></li>
                 <li><a href = "#">Page 4</a></li>
 
-                <li class = "divider"></li>
-                <li><a href = "#">Home</a></li>
              </ul>
             </div><!--end of div class button group-->
 
           </ul>
 
-          <div class="table-responsive">
+          <div id="tab-male" class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="photo"></th>
+                  <th class="name">Name</th>
+                  <th class="ratings">Ratings</th>
+                  <th class="positions">Preferred Positions</th>
+                  <th class="age">Age</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+              </tbody>
+            </table><!-- end of table -->
+          </div><!--end of table responsive div-->
+
+          <div id="tab-female" class="table-responsive hidden">
             <table class="table">
               <thead>
                 <tr>
