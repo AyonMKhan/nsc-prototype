@@ -20,6 +20,7 @@
     <link href="./assets/css/playerprofile2.css" rel="stylesheet">
     <script src="./assets/js/jquery-3.1.1.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/chart.js"></script>
     <script src="./assets/js/main.js"></script>
   </head>
 
@@ -70,6 +71,31 @@
               <div class="playerImg">
                 <img class="img-responsive" src="./assets/img/Mashrafe_big.jpg" />
               </div>
+
+              <div class="highlight-chart">
+							<div class="row">
+								<div class="col-md-4">
+									<canvas id="chart-1" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-2" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-3" width="300" height="300"></canvas>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<canvas id="chart-4" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-5" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-6" width="300" height="300"></canvas>
+								</div>
+							</div>
+						</div>
 
               <div class="row">
                 <div class="col-md-5">
@@ -177,5 +203,206 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      var ct1 = document.getElementById("chart-1");
+      var ct2 = document.getElementById("chart-2");
+      var ct3 = document.getElementById("chart-3");
+      var ct4 = document.getElementById("chart-4");
+      var ct5 = document.getElementById("chart-5");
+      var ct6 = document.getElementById("chart-6");
+      var data1 = {
+        labels: [
+          "Red",
+          "Blue",
+          "Yellow"
+        ],
+        datasets: [
+          {
+            label: "my data",
+            data: [300, 50, 100],
+            backgroundColor: [
+              "#FF6384",
+              "#36A2EB",
+              "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+              "#FF6384",
+              "#36A2EB",
+              "#FFCE56"
+            ]
+          }]
+      };
+
+      var myChart = new Chart(ct1, {
+        type: 'doughnut',
+        data: data1,
+        options: {
+          elements: {
+            arc: {
+              borderColor: "#ffffff"
+            }
+          }
+        }
+      });
+
+      var data2 = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+          {
+            label: "My First dataset",
+            fill: false,
+            lineTension: 0.1,
+            backgroundColor: "rgba(75,192,192,0.4)",
+            borderColor: "rgba(75,192,192,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(75,192,192,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: [65, 59, 80, 81, 56, 55, 40],
+            spanGaps: false,
+          }
+        ]
+      };
+
+      var myLineChart = new Chart(ct2, {
+        type: 'line',
+        data: data2,
+        options: {}
+      });
+
+      var data3 = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+          {
+            label: "My First dataset",
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+              'rgba(255,99,132,1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1,
+            data: [65, 59, 80, 81, 56, 55, 40],
+          }
+        ]
+      };
+      var myBarChart = new Chart(ct3, {
+        type: 'bar',
+        data: data3,
+        options: {}
+      });
+
+      var data4 = {
+        datasets: [
+          {
+            label: 'First Dataset',
+            data: [
+              {
+                x: 20,
+                y: 30,
+                r: 15
+              },
+              {
+                x: 40,
+                y: 10,
+                r: 10
+              }
+            ],
+            backgroundColor:"#FF6384",
+            hoverBackgroundColor: "#FF6384",
+          }]
+      };
+
+      var myBubbleChart = new Chart(ct4,{
+        type: 'bubble',
+        data: data4,
+        options: {}
+      });
+
+      var data5 = {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        datasets: [
+          {
+            label: "My First dataset",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: [65, 59, 90, 81, 56, 55, 40]
+          },
+          {
+            label: "My Second dataset",
+            backgroundColor: "rgba(255,99,132,0.2)",
+            borderColor: "rgba(255,99,132,1)",
+            pointBackgroundColor: "rgba(255,99,132,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(255,99,132,1)",
+            data: [28, 48, 40, 19, 96, 27, 100]
+          }
+        ]
+      };
+
+      var myRadarChart = new Chart(ct5, {
+        type: 'radar',
+        data: data5,
+        options: {}
+      });
+
+      var data6 = {
+        datasets: [{
+          data: [
+            11,
+            16,
+            7,
+            3,
+            14
+          ],
+          backgroundColor: [
+            "#FF6384",
+            "#4BC0C0",
+            "#FFCE56",
+            "#E7E9ED",
+            "#36A2EB"
+          ],
+          label: 'My dataset' // for legend
+        }],
+        labels: [
+          "Red",
+          "Green",
+          "Yellow",
+          "Grey",
+          "Blue"
+        ]
+      };
+
+      var myPolarChart = new Chart(ct6, {
+        data: data6,
+        type: 'polarArea',
+        options: {}
+      });
+      
+    </script>
   </body>
 </html>

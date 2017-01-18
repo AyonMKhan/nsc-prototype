@@ -20,6 +20,7 @@
     <link href="./assets/css/playerprofile1.css" rel="stylesheet">
     <script src="./assets/js/jquery-3.1.1.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/chart.js"></script>
     <script src="./assets/js/main.js"></script>
   </head>
 
@@ -200,27 +201,61 @@
 
             <div class="col-md-7">
               <!--the space between the columns is too much find a way to reduce -->
-              <div class="col-md-12 sports-col"><!--Col-md-12 inside col-md-7 in order to create some small empty white space between the columns-->
-                <h2>Background</h2>
-                <p>The quintessential country boy, Mashrafe Bin Mortaza epitomised the term "bursting onto the scene". He first came into attention during an under-17 regional tournament in 2001 when he bowled fast, slammed sixes and dived around without a care in the world.</p>
-                <p>Mashrafe's entry also sparked <a href="">plenty of enthusiasm</a> because he was the first genuine fast bowler to emerge from Bangladesh since their entry into Test cricket in 2000. He was sent to a camp conducted by West Indian great Andy Roberts, who proclaimed that Mashrafe had a great future. The selectors fast-tracked his growth and within a few months, during which he played four games for Bangladesh A in India, the young man from far-off Narail took the new-ball against visiting Zimbabwe. Soon it was clear that he had what it takes: Mashrafe was making the likes of Grant Flower jump around due to his pace, a first for a Bangladeshi fast bowler.</p>
-                <p>But another thing was also clear to those who observed him - his rickety bowling action. Feet and arms landed in the wrong arcs, and soon the injuries set in. And that has been the story of his career. Mashrafe has missed more games for Bangladesh than he has played ever since his 2001 debut. He has had seven operations on his legs, knees and ankles, which have taking a beating - first due to poor handling by captains who gave him long and ill-adviced bowling spells, and then due to freakish accidents.</p>
-                <p>After many missed games in between the odd fiery spell, Mashrafe rose to prominence in 2004, when he helped Bangladesh beat India for the first time. He was ever-present when Bangladesh pushed Australia but dropped the crucial catch of Ricky Ponting that cost the home side a win. But he made up the following year when his four-wicket haul destroyed India in the 2007 World Cup game at Port-of-Spain. Mashrafe's early strikes have always helped Bangladesh, none more so than in the 2009 tri-series final when he and Nazmul Hossain sunk Sri Lanka to a new low - six runs for five wickets. Bangladesh lost the game but Mashrafe was tremendous in his ten overs.</p>
-                <p>He was made captain in mid-2009 but in his first Test in charge, fell over and injured his knee. When he returned the next year, he led Bangladesh to a win against England in the summer of 2010 before falling over once again in his home debut as captain, against New Zealand. He missed the 2011 World Cup after yet another knee injury, but has since made a successful return in the 2012 Asia Cup.</p>
-              </div>
+
+              <div class="highlight-chart">
+							<div class="row">
+								<div class="col-md-4">
+									<canvas id="chart-1" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-2" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-3" width="300" height="300"></canvas>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<canvas id="chart-4" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-5" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-6" width="300" height="300"></canvas>
+								</div>
+							</div>
+						</div>
+
+              
+
+              
 
               <!--insert some horizontal space here-->
-              <div class="row horizontal-spacing"></div>
-              <div class="col-md-12 sports-col"><!--Col-md-12 inside col-md-7 in order to create some small empty white space between the columns-->
-                <h2 class="text-center">Statistics</h2>
-                <ul class="nav nav-tabs tabs">
-                  <li class="active" data-tab="tab-1"><a href="#">Batting</a></li>
-                  <li data-tab="tab-2"><a href="#">Bowling</a></li>
-                  <li data-tab="tab-3"><a href="#">Fielding</a></li>
-                </ul>
-                <img id="tab-1" class="img-responsive" src="./assets/img/Mashrafe Batting.png" />
-                <img id="tab-2" class="hidden img-responsive" src="./assets/img/Mashrafe Bowling.png" />
-                <img id="tab-3" class="hidden img-responsive" src="./assets/img/Mashrafe Batting.png" />
+              <div class="row">
+                <div class="col-md-12 sports-col"><!--Col-md-12 inside col-md-7 in order to create some small empty white space between the columns-->
+                  <h2 class="text-center">Statistics</h2>
+                  <ul class="nav nav-tabs tabs">
+                    <li class="active" data-tab="tab-1"><a href="#">Batting</a></li>
+                    <li data-tab="tab-2"><a href="#">Bowling</a></li>
+                    <li data-tab="tab-3"><a href="#">Fielding</a></li>
+                  </ul>
+                  <img id="tab-1" class="img-responsive" src="./assets/img/Mashrafe Batting.png" />
+                  <img id="tab-2" class="hidden img-responsive" src="./assets/img/Mashrafe Bowling.png" />
+                  <img id="tab-3" class="hidden img-responsive" src="./assets/img/Mashrafe Batting.png" />
+                </div>
+              </div>
+
+              <div class="horizontal-spacing"></div>
+              <div class="row">
+                <div class="col-md-12 sports-col"><!--Col-md-12 inside col-md-7 in order to create some small empty white space between the columns-->
+                  <h2>Background</h2>
+                  <p>The quintessential country boy, Mashrafe Bin Mortaza epitomised the term "bursting onto the scene". He first came into attention during an under-17 regional tournament in 2001 when he bowled fast, slammed sixes and dived around without a care in the world.</p>
+                  <p>Mashrafe's entry also sparked <a href="">plenty of enthusiasm</a> because he was the first genuine fast bowler to emerge from Bangladesh since their entry into Test cricket in 2000. He was sent to a camp conducted by West Indian great Andy Roberts, who proclaimed that Mashrafe had a great future. The selectors fast-tracked his growth and within a few months, during which he played four games for Bangladesh A in India, the young man from far-off Narail took the new-ball against visiting Zimbabwe. Soon it was clear that he had what it takes: Mashrafe was making the likes of Grant Flower jump around due to his pace, a first for a Bangladeshi fast bowler.</p>
+                  <p>But another thing was also clear to those who observed him - his rickety bowling action. Feet and arms landed in the wrong arcs, and soon the injuries set in. And that has been the story of his career. Mashrafe has missed more games for Bangladesh than he has played ever since his 2001 debut. He has had seven operations on his legs, knees and ankles, which have taking a beating - first due to poor handling by captains who gave him long and ill-adviced bowling spells, and then due to freakish accidents.</p>
+                  <p>After many missed games in between the odd fiery spell, Mashrafe rose to prominence in 2004, when he helped Bangladesh beat India for the first time. He was ever-present when Bangladesh pushed Australia but dropped the crucial catch of Ricky Ponting that cost the home side a win. But he made up the following year when his four-wicket haul destroyed India in the 2007 World Cup game at Port-of-Spain. Mashrafe's early strikes have always helped Bangladesh, none more so than in the 2009 tri-series final when he and Nazmul Hossain sunk Sri Lanka to a new low - six runs for five wickets. Bangladesh lost the game but Mashrafe was tremendous in his ten overs.</p>
+                  <p>He was made captain in mid-2009 but in his first Test in charge, fell over and injured his knee. When he returned the next year, he led Bangladesh to a win against England in the summer of 2010 before falling over once again in his home debut as captain, against New Zealand. He missed the 2011 World Cup after yet another knee injury, but has since made a successful return in the 2012 Asia Cup.</p>
+                </div>
               </div>
 
             </div>
@@ -249,5 +284,206 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      var ct1 = document.getElementById("chart-1");
+      var ct2 = document.getElementById("chart-2");
+      var ct3 = document.getElementById("chart-3");
+      var ct4 = document.getElementById("chart-4");
+      var ct5 = document.getElementById("chart-5");
+      var ct6 = document.getElementById("chart-6");
+      var data1 = {
+        labels: [
+          "Red",
+          "Blue",
+          "Yellow"
+        ],
+        datasets: [
+          {
+            label: "my data",
+            data: [300, 50, 100],
+            backgroundColor: [
+              "#FF6384",
+              "#36A2EB",
+              "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+              "#FF6384",
+              "#36A2EB",
+              "#FFCE56"
+            ]
+          }]
+      };
+
+      var myChart = new Chart(ct1, {
+        type: 'doughnut',
+        data: data1,
+        options: {
+          elements: {
+            arc: {
+              borderColor: "#ffffff"
+            }
+          }
+        }
+      });
+
+      var data2 = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+          {
+            label: "My First dataset",
+            fill: false,
+            lineTension: 0.1,
+            backgroundColor: "rgba(75,192,192,0.4)",
+            borderColor: "rgba(75,192,192,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(75,192,192,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: [65, 59, 80, 81, 56, 55, 40],
+            spanGaps: false,
+          }
+        ]
+      };
+
+      var myLineChart = new Chart(ct2, {
+        type: 'line',
+        data: data2,
+        options: {}
+      });
+
+      var data3 = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+          {
+            label: "My First dataset",
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+              'rgba(255,99,132,1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1,
+            data: [65, 59, 80, 81, 56, 55, 40],
+          }
+        ]
+      };
+      var myBarChart = new Chart(ct3, {
+        type: 'bar',
+        data: data3,
+        options: {}
+      });
+
+      var data4 = {
+        datasets: [
+          {
+            label: 'First Dataset',
+            data: [
+              {
+                x: 20,
+                y: 30,
+                r: 15
+              },
+              {
+                x: 40,
+                y: 10,
+                r: 10
+              }
+            ],
+            backgroundColor:"#FF6384",
+            hoverBackgroundColor: "#FF6384",
+          }]
+      };
+
+      var myBubbleChart = new Chart(ct4, {
+        type: 'bubble',
+        data: data4,
+        options: {}
+      });
+
+      var data5 = {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        datasets: [
+          {
+            label: "My First dataset",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: [65, 59, 90, 81, 56, 55, 40]
+          },
+          {
+            label: "My Second dataset",
+            backgroundColor: "rgba(255,99,132,0.2)",
+            borderColor: "rgba(255,99,132,1)",
+            pointBackgroundColor: "rgba(255,99,132,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(255,99,132,1)",
+            data: [28, 48, 40, 19, 96, 27, 100]
+          }
+        ]
+      };
+
+      var myRadarChart = new Chart(ct5, {
+        type: 'radar',
+        data: data5,
+        options: {}
+      });
+
+      var data6 = {
+        datasets: [{
+          data: [
+            11,
+            16,
+            7,
+            3,
+            14
+          ],
+          backgroundColor: [
+            "#FF6384",
+            "#4BC0C0",
+            "#FFCE56",
+            "#E7E9ED",
+            "#36A2EB"
+          ],
+          label: 'My dataset' // for legend
+        }],
+        labels: [
+          "Red",
+          "Green",
+          "Yellow",
+          "Grey",
+          "Blue"
+        ]
+      };
+
+      var myPolarChart = new Chart(ct6, {
+        data: data6,
+        type: 'polarArea',
+        options: {}
+      });
+    
+    </script>
   </body>
 </html>
