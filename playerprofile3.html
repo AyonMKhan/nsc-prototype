@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Cricketer Profile</title>
+
+	<!-- CSS & JS -->
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="./assets/css/main.css" rel="stylesheet">
+	<link href="./assets/css/playerprofile2.css" rel="stylesheet">
+	<script src="./assets/js/jquery-3.1.1.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/chart.js"></script>
+	<script src="./assets/js/main.js"></script>
+</head>
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="content-wrap">
+			<!--Content wrap for making space for footer-->
+			<!--<div>
+          <nav class="nav navbar-default" role="navigation">
+            <ul class="nav navbar-nav mega-navbar">
+              <li class="mega-menu">
+                <a href="#">Sports</a>
+
+                <div class="mega-menu-main">
+                  <div class="mega-menu-imgs">
+                    <img class="mega-menu-img" src="https://placehold.it/100x100"/>
+                    <img class="mega-menu-img" src="https://placehold.it/100x100"/>
+                  </div>
+                  <div class="mega-menu-list-items">
+                    ;lasdkjflasd;jf
+                  </div>
+                </div>
+
+              </li>
+              <li class="">
+                <a href="#">Top Performers</a>
+                <div></div>
+
+              </li>
+              <li><a href="#">Infrastructures</a></li>
+              <li><a href="#">Federations</a></li>
+              <li><a href="#">Organizers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>-->
+
+			<!-- /Jumbotron space for banner and logo-->
+			<div class="jumbotron banner-space">
+				<img class="img-responsive" src="./assets/img/banner 1140x133.jpg" />
+			</div>
+
+			<!-- Content columns -->
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-8 sports-col">
+
+						<div class="highlight-chart">
+							<div class="row">
+								<div class="col-md-4">
+									<canvas id="chart-1" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-2" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-3" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-4" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-5" width="300" height="300"></canvas>
+								</div>
+								<div class="col-md-4">
+									<canvas id="chart-6" width="300" height="300"></canvas>
+								</div>
+							</div>
+						</div>
+
+						<h2 class="text-center">Statistics</h2>
+						<ul class="nav nav-tabs stats-tabs">
+							<li class="active" data-tab="tab-1"><a href="#">Batting</a></li>
+							<li data-tab="tab-2"><a href="#">Bowling</a></li>
+							<li data-tab="tab-3"><a href="#">Fielding</a></li>
+						</ul>
+						<img id="tab-1" class="img-responsive" src="./assets/img/Mashrafe Batting.png" />
+						<img id="tab-2" class="hidden img-responsive" src="./assets/img/Mashrafe Bowling.png" />
+						<img id="tab-3" class="hidden img-responsive" src="./assets/img/Mashrafe Batting.png" />
+
+						<!--              <div class="row">
+                <div class="col-md-5">
+
+
+                </div>
+                <div class="col-md-7">
+
+                </div>
+              </div>-->
+
+						<div class="row">
+							<div class="col-md-12">
+								<h2>Background</h2>
+								<p>The quintessential country boy, Mashrafe Bin Mortaza epitomised the term "bursting onto the scene". He first came
+									into attention during an under-17 regional tournament in 2001 when he bowled fast, slammed sixes and dived around
+									without a care in the world.</p>
+								<p>Mashrafe's entry also sparked <a href="">plenty of enthusiasm</a> because he was the first genuine fast bowler to
+									emerge from Bangladesh since their entry into Test cricket in 2000. He was sent to a camp conducted by West Indian
+									great Andy Roberts, who proclaimed that Mashrafe had a great future. The selectors fast-tracked his growth and within
+									a few months, during which he played four games for Bangladesh A in India, the young man from far-off Narail took
+									the new-ball against visiting Zimbabwe. Soon it was clear that he had what it takes: Mashrafe was making the likes
+									of Grant Flower jump around due to his pace, a first for a Bangladeshi fast bowler.</p>
+								<p>But another thing was also clear to those who observed him - his rickety bowling action. Feet and arms landed in
+									the wrong arcs, and soon the injuries set in. And that has been the story of his career. Mashrafe has missed more
+									games for Bangladesh than he has played ever since his 2001 debut. He has had seven operations on his legs, knees
+									and ankles, which have taking a beating - first due to poor handling by captains who gave him long and ill-adviced
+									bowling spells, and then due to freakish accidents.</p>
+								<p>After many missed games in between the odd fiery spell, Mashrafe rose to prominence in 2004, when he helped Bangladesh
+									beat India for the first time. He was ever-present when Bangladesh pushed Australia but dropped the crucial catch
+									of Ricky Ponting that cost the home side a win. But he made up the following year when his four-wicket haul destroyed
+									India in the 2007 World Cup game at Port-of-Spain. Mashrafe's early strikes have always helped Bangladesh, none
+									more so than in the 2009 tri-series final when he and Nazmul Hossain sunk Sri Lanka to a new low - six runs for
+									five wickets. Bangladesh lost the game but Mashrafe was tremendous in his ten overs.</p>
+								<p>He was made captain in mid-2009 but in his first Test in charge, fell over and injured his knee. When he returned
+									the next year, he led Bangladesh to a win against England in the summer of 2010 before falling over once again in
+									his home debut as captain, against New Zealand. He missed the 2011 World Cup after yet another knee injury, but
+									has since made a successful return in the 2012 Asia Cup.</p>
+							</div>
+						</div>
+						<!--end of row inside col md 8-->
+
+					</div>
+					<!--end of col-md-8-->
+
+					<div class="col-md-4">
+						<div class="playerImg">
+							<img class="img-responsive" src="./assets/img/Mashrafe_big.jpg" />
+						</div>
+						<!--end of playerImg div-->
+
+						<table>
+							<caption>Personal Information</caption>
+							<tr>
+								<th>Full Name</th>
+								<td>Mashrafe Bin Mortaza</td>
+							</tr>
+							<tr>
+								<th>Born</th>
+								<td>5th October 1983</td>
+							</tr>
+							<tr>
+								<th>Nicknames</th>
+								<td>Koushik, Mash, Narail Express</td>
+							</tr>
+							<tr>
+								<th>Height</th>
+								<td>6ft 1in (1.85m)</td>
+							</tr>
+							<tr>
+								<th>Batting Style</th>
+								<td>Right Handed</td>
+							</tr>
+							<tr>
+								<th>Bowling Style</th>
+								<td>Right Arm Medium Fast</td>
+							</tr>
+							<tr>
+								<th>Role</th>
+								<td>Bowler, Bangladesh Captain</td>
+							</tr>
+						</table>
+						<!--End of Personal Info-->
+
+						<table>
+							<caption>International Information</caption>
+							<tr>
+								<th>National side </th>
+								<td>Bangladesh</td>
+							</tr>
+							<tr>
+								<th>Test debut (cap 19)</th>
+								<td>8 November 2001 v Zimbabwe</td>
+							</tr>
+							<tr>
+								<th>Last Test</th>
+								<td>9 July 2009 v Pakistan</td>
+							</tr>
+							<tr>
+								<th>ODI debut (cap 53)</th>
+								<td>23 November 2001 v Zimbabwe</td>
+							</tr>
+							<tr>
+								<th>Last ODI</th>
+								<td>9 October 2016 v England</td>
+							</tr>
+							<tr>
+								<th>ODI shirt no.</th>
+								<td>2</td>
+							</tr>
+							<tr>
+								<th>T20I debut (cap 4)</th>
+								<td>28 November 2006 v Zimbabwe</td>
+							</tr>
+							<tr>
+								<th>Last T20I</th>
+								<td>28 February 2016 v Sri Lanka</td>
+							</tr>
+						</table>
+
+
+
+					</div>
+					<!--end of col md 4-->
+
+				</div>
+				<!--end of div row-->
+			</div>
+			<!--end of container fluid-->
+
+		</div>
+		<!--end of content-wrap-->
+		<div class="horizontal-spacing"></div>
+		<!-- Site footer -->
+		<footer class="footer">
+			<div class="footer-div">
+				<p>&copy; 2016 Company, Inc.</p>
+				<p>&copy; 2016 Company, Inc.</p>
+			</div>
+
+		</footer>
+
+	</div>
+	<!--end of container-->
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script>
+		var ct1 = document.getElementById("chart-1");
+		var data1 = {
+			labels: [
+				"Red",
+				"Blue",
+				"Yellow"
+			],
+			datasets: [
+				{
+					data: [300, 50, 100],
+					backgroundColor: [
+						"#FF6384",
+						"#36A2EB",
+						"#FFCE56"
+					],
+					hoverBackgroundColor: [
+						"#FF6384",
+						"#36A2EB",
+						"#FFCE56"
+					]
+				}]
+		};
+
+		var myChart = new Chart(ct1, {
+			type: 'doughnut',
+			data: data1,
+			options: {
+				elements: {
+					arc: {
+						borderColor: "#ffffff"
+					}
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

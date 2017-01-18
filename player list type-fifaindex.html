@@ -1,0 +1,199 @@
+<!--User stories
+There must be a table displaying player profiles on the left side of the page
+There must be a search form for searching players on the right side
+there must be a page selector menu-button on top of the player table
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Player List Type FifaIndex</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="./assets/css/fifaindextype.css" rel="stylesheet">
+
+    <script src="./assets/js/jquery-3.1.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-9">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Male</a></li>
+            <li><a href="#">Female</a></li>
+
+            <div class = "btn-group">
+             <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown">
+                Page 1
+                <span class = "caret"></span>
+             </button>
+
+             <ul class = "dropdown-menu" role = "menu">
+                <li><a href = "#">Page 2</a></li>
+                <li><a href = "#">Page 3</a></li>
+                <li><a href = "#">Page 4</a></li>
+
+                <li class = "divider"></li>
+                <li><a href = "#">Home</a></li>
+             </ul>
+            </div><!--end of div class button group-->
+
+          </ul>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="photo"></th>
+                  <th class="name">Name</th>
+                  <th class="ratings">Ratings</th>
+                  <th class="positions">Preferred Positions</th>
+                  <th class="age">Age</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Mamunul Islam.jpg" /></td>
+                  <td class="name">Mamunul Islam</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Offense</td>
+                  <td class="age">23</td>
+                </tr>
+                <tr>
+                  <td class="photo"><img class="playerImg img-rounded img-responsive" src="./assets/img/Jamal Bhuyan.jpg" /></td>
+                  <td class="name">Jamal Bhuyan</td>
+                  <td class="ratings">9000</td>
+                  <td class="positions">Midfield</td>
+                  <td class="age">32</td>
+                </tr>
+              </tbody>
+            </table><!-- end of table -->
+          </div><!--end of table responsive div-->
+
+        </div><!--end of column md 9-->
+
+        <div class="col-md-3">
+          <ul class="nav nav-tabs">
+            <li class="active"><a>Search Players</a></li>
+          </ul>
+          <form>
+            <div class="form-group">
+               <label for="inputName">Name</label>
+               <input type="text" class="pull-right" id="inputName" placeholder="Search by Name">
+             </div>
+             <div class="form-group">
+               <label for="inputTeam">Team</label>
+               <select class="pull-right" id="inputTeam">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+             </div>
+             <div class="form-group">
+               <label for="inputAgeGroup">Age Group</label>
+               <select class="pull-right" id="inputAgeGroup">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+             </div>
+             <div class="form-group">
+               <label for="inputPositions">Preferred Positions</label>
+               <select class="pull-right" id="inputPositions">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+             </div>
+             <button type="submit" class="btn btn-default">Search</button>
+          </form>
+        </div><!--end of col md 3-->
+
+      </div>
+
+    </div><!--End of body container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

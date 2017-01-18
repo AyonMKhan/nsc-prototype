@@ -1,0 +1,58 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #f8f8f8;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+a:active {
+color: #1100ff;
+}
+
+
+.content-wrap > div.banner-space {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 10px auto;
+  height: 133px
+}
+
+.banner-space * {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+.content-wrap {/*for making footer stick to the bottom*/
+  min-height: calc(100vh - 120px)
+}
+
+footer.footer {
+  background-color: #f0f0f0;
+  border: 1px solid #666;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 100px;
+}
+
+
+div.row.horizontal-spacing, div.horizontal-spacing {
+  margin: 6px 0;
+}

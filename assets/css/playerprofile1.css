@@ -1,0 +1,109 @@
+
+
+.navbar-default {
+  position: relative;
+}
+
+/*.mega-navbar: hover {
+  border-right: 1px solid grey;0c00b2
+  border-left: 1px solid grey;
+
+.container {
+  background-color: #f8f8f8;
+}
+
+}
+
+.mega-menu: hover {
+border-right: 1px solid grey;
+border-left: 1px solid grey;
+}*/
+
+.navbar-default .navbar-nav > li.mega-menu:hover > div.mega-menu-main {
+  display: block;
+}
+
+/*.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #333;
+  background-color: transparent;
+}
+For reference, this is what must be overwritten in Bootstrap css
+*/
+
+.navbar-default .navbar-nav > li.mega-menu > div.mega-menu-main {
+  position: absolute;
+  width: inherit;
+  left: 0;
+  top: 50px;
+  display: none;
+  overflow: hidden;
+  z-index: 100;
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li.mega-menu {
+  position: static;
+}
+
+.mega-menu-imgs {
+  display: inline-block;
+}
+
+.content-wrap > div.banner-space {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 10px auto;
+  height: 133px
+}
+
+.banner-space * {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sports-col {
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  border: 1px solid #666;
+}
+
+div.mega-menu-main > div.mega-menu-imgs > img.mega-menu-img {
+  display: inline-block;
+}
+
+#playerImg {/*centralize player image*/
+  margin: 10px auto 0 auto;
+}
+
+.content-wrap {/*for making footer stick to the bottom*/
+  min-height: calc(100vh - 120px)
+}
+
+
+div.mega-menu-list-items {
+  display: inline-block;
+}
+
+div.mega-menu-list-items > ul > li {/*css for individual links to megamenu links*/
+  list-style: none;
+}
+
+div.mega-menu-list-items > ul > li > a {/*css for individual links to megamenu links*/
+  text-decoration: none;
+}
+
+
+div.banner-right > img{
+  margin: 0 auto;
+}
+
+img.nav-brand {
+  float: left;
+}
+img.nav-brand:after {
+  clear: both;
+}
