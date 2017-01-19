@@ -11,7 +11,7 @@
 	<meta name="author" content="">
 	<link rel="icon" href="../../favicon.ico">
 
-	<title>Cricketer Profile</title>
+	<title>Footballer Profile</title>
 
 	<!-- CSS & JS -->
 	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -103,9 +103,15 @@
 							<li data-tab="tab-2"><a href="#">Bowling</a></li>
 							<li data-tab="tab-3"><a href="#">Fielding</a></li>
 						</ul>
-						<img id="tab-1" class="img-responsive" src="./assets/img/Mashrafe Batting.png" />
-						<img id="tab-2" class="hidden img-responsive" src="./assets/img/Mashrafe Bowling.png" />
-						<img id="tab-3" class="hidden img-responsive" src="./assets/img/Mashrafe Batting.png" />
+						<div id="tab-1" class="table-responsive">
+							
+						</div>
+						<div id="tab-2" class="hidden table-responsive">
+							
+						</div>
+						<div id="tab-3" class="hidden table-responsive">
+							
+						</div>
 
 						<!--              <div class="row">
                 <div class="col-md-5">
@@ -239,23 +245,25 @@
 		var ct6 = document.getElementById("chart-6");
 		var data1 = {
 			labels: [
-				"Red",
-				"Blue",
-				"Yellow"
+				"Friendlies",
+				"Copa America",
+				"FIFA World Cup Qualifications",
+				"FIFA World Cup Tournaments"
 			],
 			datasets: [
 				{
-					label: "my data",
-					data: [300, 50, 100],
+					data: [27, 8, 17, 5],
 					backgroundColor: [
 						"#FF6384",
 						"#36A2EB",
-						"#FFCE56"
+						"#FFCE56",
+						"#ff2354",
 					],
 					hoverBackgroundColor: [
 						"#FF6384",
 						"#36A2EB",
-						"#FFCE56"
+						"#FFCE56",
+						"#ff2354"
 					]
 				}]
 		};

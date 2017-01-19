@@ -236,13 +236,280 @@
                 <div class="col-md-12 sports-col"><!--Col-md-12 inside col-md-7 in order to create some small empty white space between the columns-->
                   <h2 class="text-center">Statistics</h2>
                   <ul class="nav nav-tabs tabs">
-                    <li class="active" data-tab="tab-1"><a href="#">Batting</a></li>
-                    <li data-tab="tab-2"><a href="#">Bowling</a></li>
-                    <li data-tab="tab-3"><a href="#">Fielding</a></li>
+                    <li class="active" data-tab="tab-1"><a href="#">Batting Career</a></li>
+                    <li data-tab="tab-2"><a href="#">Bowling Career</a></li>
+                    <li data-tab="tab-3"><a href="#">Overall Career</a></li>
                   </ul>
-                  <img id="tab-1" class="img-responsive" src="./assets/img/Mashrafe Batting.png" />
-                  <img id="tab-2" class="hidden img-responsive" src="./assets/img/Mashrafe Bowling.png" />
-                  <img id="tab-3" class="hidden img-responsive" src="./assets/img/Mashrafe Batting.png" />
+                  <div id="tab-1" class="table-responsive">
+<table class="table">
+  <thead>
+    <tr class="cb-bg-grey cb-font-12">
+    <th></th>
+    <th class="cb-plyr-th text-right" title="Matches Played">M</th>
+    <th class="text-right" title="No of Innings Batted">Inn</th>
+    <th class="text-right" title="No of Not Outs">NO</th>
+    <th class="text-right" title="No of Runs Scored">Runs</th>
+    <th class="text-right" title="Highest Score">HS</th>
+    <th class="text-right" title="Batting Average">Avg</th>
+    <th class="text-right" title="No of Balls Faced">BF</th>
+    <th class="text-right" title="Batting Strike Rate">SR</th>
+    <th class="text-right" title="No of 100s Scored">100</th>
+    <th class="text-right" title="No of 200s Scored">200</th>
+    <th class="text-right" title="No of 50s Scored">50</th>
+    <th class="text-right" title="No of fours hit">4s</th>
+    <th class="text-right" title="No of sixes hit">6s</th>
+    <th class="text-right cb-plyr-stump" title="No of Stumpings done">St</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td class="cb-col-8"><strong>Tests</strong></td>
+    <td class="cb-plyr-tbody text-right">36</td>
+    <td class="text-right">67</td> <td class="text-right">5</td>
+    <td class="text-right">797</td>
+    <td class="text-right">79</td>
+    <td class="text-right">12.85</td>
+    <td class="text-right">1186</td>
+    <td class="text-right">67.2</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td>
+    <td class="text-right">3</td>
+    <td class="text-right">95</td>
+    <td class="text-right">22</td>
+    <td class="text-right cb-plyr-stump">0</td>
+    </tr>
+    <tr>
+      <td><strong>ODI</strong></td>
+    <td class="cb-plyr-tbody text-right">169</td>
+    <td class="text-right">128</td>
+    <td class="text-right">21</td>
+    <td class="text-right">1540</td>
+    <td class="text-right">51</td>
+    <td class="text-right">14.39</td>
+    <td class="text-right">1731</td>
+    <td class="text-right">88.97</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td> <td class="text-right">1</td>
+    <td class="text-right">129</td>
+    <td class="text-right">53</td>
+    <td class="text-right cb-plyr-stump">0</td>
+    </tr>
+    <tr>
+      <td><strong>T20I</strong></td>
+    <td class="cb-plyr-tbody text-right">52</td>
+    <td class="text-right">37</td>
+    <td class="text-right">10</td>
+    <td class="text-right">368</td>
+    <td class="text-right">36</td> <td class="text-right">13.63</td>
+    <td class="text-right">272</td>
+    <td class="text-right">135.29</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td>
+    <td class="text-right">27</td>
+    <td class="text-right">23</td>
+    <td class="text-right cb-plyr-stump">0</td>
+    </tr>
+    <tr>
+    <td><strong>IPL</strong></td>
+    <td class="cb-plyr-tbody text-right">1</td>
+    <td class="text-right">1</td>
+    <td class="text-right">1</td>
+    <td class="text-right">2</td>
+    <td class="text-right">2</td>
+    <td class="text-right">0</td>
+    <td class="text-right">2</td>
+    <td class="text-right">100</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td>
+    <td class="text-right">0</td>
+    <td class="text-right cb-plyr-stump">0</td>
+    </tr>
+  </tbody>
+</table>
+
+                  </div><!--end of div tab-1-->
+
+                  <div id="tab-2" class="hidden table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr class="cb-bg-grey cb-font-12">
+                          <th></th>
+                          <th class="cb-plyr-th text-right" title="Matches Played">M</th>
+                          <th class="text-right" title="No of Innings Bowled">Inn</th>
+                          <th class="text-right" title="No of Balls Bowled">B</th>
+                          <th class="text-right" title="No of Runs Conceded">Runs</th>
+                          <th class="text-right" title="Wickets">Wkts</th>
+                          <th class="text-right" title="Best Bowling in Innings">BBI</th>
+                          <th class="text-right" title="Best Bowling in Match">BBM</th>
+                          <th class="text-right" title="Economy">Econ</th> <th class="text-right" title="Bowling Average">Avg</th> <th class="text-right" title="Bowling Strike Rate">SR</th>
+                          <th class="text-right" title="Five Wickets in an Innings">5W</th>
+                          <th class="text-right cb-plyr-stump" title="Ten Wickets in an Match">10W</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="cb-col-8"><strong>Tests</strong></td>
+                          <td class="cb-plyr-tbody text-right">36</td>
+                          <td class="text-right">51</td>
+                          <td class="text-right">5990</td>
+                          <td class="text-right">3239</td>
+                          <td class="text-right">78</td>
+                          <td class="text-right">60/4</td>
+                          <td class="text-right">88/5</td>
+                          <td class="text-right">3.24</td>
+                          <td class="text-right">41.53</td>
+                          <td class="text-right">76.79</td>
+                          <td class="text-right">0</td>
+                          <td class="text-right cb-plyr-stump">0</td>
+                        </tr>
+                        <tr>
+                          <td><strong>ODI</strong></td>
+                          <td class="cb-plyr-tbody text-right">169</td>
+                          <td class="text-right">169</td>
+                          <td class="text-right">8453</td>
+                          <td class="text-right">6647</td>
+                          <td class="text-right">219</td>
+                          <td class="text-right">26/6</td>
+                          <td class="text-right">26/6</td>
+                          <td class="text-right">4.72</td>
+                          <td class="text-right">30.35</td>
+                          <td class="text-right">38.6</td>
+                          <td class="text-right">1</td>
+                          <td class="text-right cb-plyr-stump">0</td>
+                        </tr>
+                        <tr>
+                          <td><strong>T20I</strong></td>
+                          <td class="cb-plyr-tbody text-right">52</td>
+                          <td class="text-right">51</td>
+                          <td class="text-right">1091</td>
+                          <td class="text-right">1466</td>
+                          <td class="text-right">39</td>
+                          <td class="text-right">19/4</td>
+                          <td class="text-right">19/4</td>
+                          <td class="text-right">8.06</td>
+                          <td class="text-right">37.59</td>
+                          <td class="text-right">27.97</td>
+                          <td class="text-right">0</td>
+                          <td class="text-right cb-plyr-stump">0</td>
+                        </tr>
+                        <tr>
+                          <td><strong>IPL</strong></td>
+                          <td class="cb-plyr-tbody text-right">1</td>
+                          <td class="text-right">1</td>
+                          <td class="text-right">24</td>
+                          <td class="text-right">58</td>
+                          <td class="text-right">0</td>
+                          <td class="text-right">58/0</td>
+                          <td class="text-right">58/0</td>
+                          <td class="text-right">14.5</td>
+                          <td class="text-right">0</td>
+                          <td class="text-right">0</td>
+                          <td class="text-right">0</td>
+                          <td class="text-right cb-plyr-stump">0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div><!--end of div tab-2-->
+
+                  <div id="tab-3" class="hidden table-responsive">
+                    <table class="table">
+                      <tr>
+                      <th>Competition</th>
+                      <th><a href="/wiki/Test_cricket" title="Test cricket">Test</a></th>
+                      <th><a href="/wiki/One_Day_International" title="One Day International">ODI</a></th>
+                      <th><a href="/wiki/T20_International" class="mw-redirect" title="T20 International">T20I</a></th>
+                      <th><a href="/wiki/First-class_cricket" title="First-class cricket">FC</a></th>
+                      </tr>
+                      <tr>
+                      <th>Matches</th>
+                      <td>36</td>
+                      <td>165</td>
+                      <td>49</td>
+                      <td>54</td>
+                      </tr>
+                      <tr>
+                      <th>Runs scored</th>
+                      <td>797</td>
+                      <td>1,495</td>
+                      <td>366</td>
+                      <td>1,433</td>
+                      </tr>
+                      <tr>
+                      <th><a href="/wiki/Batting_average_(cricket)" class="mw-redirect" title="Batting average (cricket)">Batting average</a></th>
+                      <td>12.85</td>
+                      <td>14.37</td>
+                      <td>14.64</td>
+                      <td>16.10</td>
+                      </tr>
+                      <tr>
+                      <th>100s/50s</th>
+                      <td>0/3</td>
+                      <td>0/1</td>
+                      <td>0/0</td>
+                      <td>1/6</td>
+                      </tr>
+                      <tr>
+                      <th>Top score</th>
+                      <td>79</td>
+                      <td>51*</td>
+                      <td>36</td>
+                      <td>132*</td>
+                      </tr>
+                      <tr>
+                      <th><a href="/wiki/Delivery_(cricket)" title="Delivery (cricket)">Balls</a> bowled</th>
+                      <td>5,990</td>
+                      <td>8,225</td>
+                      <td>1,029</td>
+                      <td>8,673</td>
+                      </tr>
+                      <tr>
+                      <th><a href="/wiki/Wicket" title="Wicket">Wickets</a></th>
+                      <td>78</td>
+                      <td>214</td>
+                      <td>38</td>
+                      <td>129</td>
+                      </tr>
+                      <tr>
+                      <th><a href="/wiki/Bowling_average" title="Bowling average">Bowling average</a></th>
+                      <td>41.52</td>
+                      <td>30.12</td>
+                      <td>35.86</td>
+                      <td>35.19</td>
+                      </tr>
+                      <tr>
+                      <th>5 wickets in <a href="/wiki/Innings" title="Innings">innings</a></th>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>n/a</td>
+                      <td>0</td>
+                      </tr>
+                      <tr>
+                      <th>10 wickets in match</th>
+                      <td>0</td>
+                      <td>n/a</td>
+                      <td>n/a</td>
+                      <td>0</td>
+                      </tr>
+                      <tr>
+                      <th>Best bowling</th>
+                      <td>4/60</td>
+                      <td>6/26</td>
+                      <td>4/19</td>
+                      <td>4/27</td>
+                      </tr>
+                      <tr>
+                      <th>Catches/<a href="/wiki/Stumped" title="Stumped">stumpings</a></th>
+                      <td>9/–</td>
+                      <td>51/–</td>
+                      <td>9/–</td>
+                      <td>23/–</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
 

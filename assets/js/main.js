@@ -11,8 +11,21 @@ $(document).ready(function() {
     $(this).addClass("active");
     $("#"+tabId).removeClass("hidden");
 
-
-
-
   })
+
+
+  $("p.see-more-toggle").click(function() {
+    //e.preventDefault();//prevent default link clicking behavior
+
+    if ($(this).text() === "See more...") {
+      
+      $("p.see-more-toggle").parent().children(".see-more").removeClass("hidden");
+      $(this).text("See less...");
+    } 
+    
+    else {
+      $(this).text("See more...");
+      $("p.see-more-toggle").parent().children(".see-more").addClass("hidden");
+    }
+  });
 });
