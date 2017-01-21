@@ -2,6 +2,8 @@
 
 .navbar-default {
   position: relative;
+  background-color: #fff;
+  border-bottom: 2px solid black;
 }
 
 /*.mega-navbar: hover {
@@ -65,11 +67,11 @@ For reference, this is what must be overwritten in Bootstrap css
   margin: 0 auto;
 }
 
-.sports-col {
+/*.sports-col {
   border-radius: 5px;
   background-color: #f8f8f8;
   border: 1px solid #666;
-}
+}*/
 
 div.mega-menu-main > div.mega-menu-imgs > img.mega-menu-img {
   display: inline-block;
