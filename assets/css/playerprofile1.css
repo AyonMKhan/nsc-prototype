@@ -23,6 +23,7 @@ border-left: 1px solid grey;
 
 .navbar-default .navbar-nav > li.mega-menu:hover > div.mega-menu-main {
   display: block;
+  width: 100%;
 }
 
 /*.navbar-default .navbar-nav>li>a:hover,
@@ -73,8 +74,8 @@ For reference, this is what must be overwritten in Bootstrap css
   border: 1px solid #666;
 }*/
 
-div.mega-menu-main > div.mega-menu-imgs > img.mega-menu-img {
-  display: inline-block;
+div.mega-menu-main > div.mega-menu-imgs > div.mega-menu-img {
+  margin: 7.5px;
 }
 
 #playerImg {/*centralize player image*/
@@ -108,4 +109,9 @@ img.nav-brand {
 }
 img.nav-brand:after {
   clear: both;
+}
+
+nav.nav.navbar-default > ul.nav.navbar-nav.mega-navbar > li.mega-menu > a {
+  font-weight: bold;
+  font-size: 1.2em;
 }
