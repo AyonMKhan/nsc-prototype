@@ -41,7 +41,7 @@ color: #1100ff;
 
 
 .content-wrap {/*for making footer stick to the bottom*/
-  min-height: calc(100vh - 120px)
+  min-height: calc(100vh - 100px)
 }
 
 footer.footer {
