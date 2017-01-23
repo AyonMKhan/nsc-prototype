@@ -43,7 +43,7 @@ For reference, this is what must be overwritten in Bootstrap css
   top: 50px;
   display: none;
   overflow: hidden;
-  z-index: 100;
+  z-index: 1;
   background-color: white;
 }
 

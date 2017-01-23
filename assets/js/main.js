@@ -28,4 +28,18 @@ $(document).ready(function() {
       $("p.see-more-toggle").parent().children(".see-more").addClass("hidden");
     }
   });
+
+
+ /* var gallery = $("div.gallery");
+  var galleryContainer = $("div.gallery-container");
+
+  $("div.gallery").click(function() {
+    $("div.gallery-container").toggleClass("hidden");
+    
+    
+  });*/
+  $("div.gallery").click(function() {
+    $("#gallery-modal").modal();
+  });
+
 });
