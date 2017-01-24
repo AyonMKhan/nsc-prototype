@@ -56,7 +56,9 @@ For reference, this is what must be overwritten in Bootstrap css
 }
 
 div.mega-menu-main > div.mega-menu-imgs > div.mega-menu-img {
-  margin: 7.5px;
+  margin: 7.5px 10px;
+  /*max-height: 64px;
+  max-width: 64px;*/
 }
 
 div.mega-menu-list-items {

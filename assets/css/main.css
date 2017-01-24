@@ -7,7 +7,7 @@ body {
   background-color: #f8f8f8;
 }
 
-a:link {
+/*a:link {
   text-decoration: none;
   color: black;
 }
@@ -21,7 +21,7 @@ a:hover {
 
 a:active {
 color: #1100ff;
-}
+}*/
 
 
 .content-wrap > div.banner-space {
@@ -63,3 +63,6 @@ p.see-more-toggle {
 }
 
 
+div.right-column {
+  padding-left: 10px;
+}
