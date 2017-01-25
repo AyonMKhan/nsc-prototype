@@ -7,21 +7,21 @@ body {
   background-color: #f8f8f8;
 }
 
-/*a:link {
+a:link {
   text-decoration: none;
-  color: black;
+  color: #98C23B;
 }
 a:visited {
-  color: #ffd700;
+  color: #3D662C;
 }
 
 a:hover {
-  color: #1100ff;
+  color: #3D662C;
 }
 
 a:active {
-color: #1100ff;
-}*/
+color: #3D662C;
+}
 
 
 .content-wrap > div.banner-space {
@@ -65,4 +65,22 @@ p.see-more-toggle {
 
 div.right-column {
   padding-left: 10px;
+}
+
+.img-grow {
+  overflow: hidden;
+}
+ 
+
+.img-grow img {
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.img-grow:hover img, .img-grow:focus img {
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
