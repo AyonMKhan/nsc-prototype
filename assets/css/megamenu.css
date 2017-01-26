@@ -26,6 +26,9 @@ border-left: 1px solid grey;
 .navbar-default .navbar-nav > li.mega-menu:hover > div.mega-menu-main {
   display: block;
   width: 100%;
+  visibility: visible;
+  opacity: 1;
+
 }
 
 /*.navbar-default .navbar-nav>li>a:hover,
@@ -42,9 +45,13 @@ For reference, this is what must be overwritten in Bootstrap css
   left: 0;
   top: 50px;
   display: none;
+  visibility: hidden;
+  opacity: 0;
   overflow: hidden;
   z-index: 1;
   background-color: white;
+  -webkit-transition: visibility 1s linear 0.3s, opacity 1s linear 0.3s;
+  transition:  visibility 1s linear 0.3s, opacity 1s linear 0.3s;
 }
 
 .navbar-default .navbar-nav > li.mega-menu {
