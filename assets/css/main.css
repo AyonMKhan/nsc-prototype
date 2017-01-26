@@ -37,6 +37,7 @@ color: #3D662C;
   border: 0;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 
@@ -83,4 +84,24 @@ div.right-column {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.white-green-grad {
+  background: rgb(248,255,232); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(248,255,232,1) 62%, rgba(227,245,171,1) 94%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(248,255,232,1) 62%,rgba(227,245,171,1) 94%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(248,255,232,1) 62%,rgba(227,245,171,1) 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#e3f5ab',GradientType=0 );
+}
+
+div.green-grad {
+    background: -moz-linear-gradient(top, rgba(180,227,145,0.51) 11%, rgba(180,227,145,0.51) 19%, rgba(180,227,145,0.51) 23%, rgba(180,227,145,0.51) 27%, rgba(180,227,145,0.51) 32%, rgba(180,227,145,0.51) 36%, rgba(180,227,145,0.51) 44%, rgba(180,227,145,0.51) 48%, rgba(180,227,145,0.51) 60%, rgba(180,227,145,0.51) 66%, rgba(180,227,145,0.51) 67%, rgba(180,227,145,0.61) 71%, rgba(93,197,85,1) 87%, rgba(22,173,37,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(180,227,145,0.51) 11%,rgba(180,227,145,0.51) 19%,rgba(180,227,145,0.51) 23%,rgba(180,227,145,0.51) 27%,rgba(180,227,145,0.51) 32%,rgba(180,227,145,0.51) 36%,rgba(180,227,145,0.51) 44%,rgba(180,227,145,0.51) 48%,rgba(180,227,145,0.51) 60%,rgba(180,227,145,0.51) 66%,rgba(180,227,145,0.51) 67%,rgba(180,227,145,0.61) 71%,rgba(93,197,85,1) 87%,rgba(22,173,37,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(180,227,145,0.51) 11%,rgba(180,227,145,0.51) 19%,rgba(180,227,145,0.51) 23%,rgba(180,227,145,0.51) 27%,rgba(180,227,145,0.51) 32%,rgba(180,227,145,0.51) 36%,rgba(180,227,145,0.51) 44%,rgba(180,227,145,0.51) 48%,rgba(180,227,145,0.51) 60%,rgba(180,227,145,0.51) 66%,rgba(180,227,145,0.51) 67%,rgba(180,227,145,0.61) 71%,rgba(93,197,85,1) 87%,rgba(22,173,37,1) 100%);
+}
+
+div.green-shadow {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(35,84,36,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(35,84,36,1);
+    box-shadow: 5px 5px 5px 0px rgba(35,84,36,1);
 }

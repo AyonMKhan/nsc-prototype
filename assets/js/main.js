@@ -30,25 +30,17 @@ $(document).ready(function() {
   });
 
 
- /* var gallery = $("div.gallery");
-  var galleryContainer = $("div.gallery-container");
-
-  $("div.gallery").click(function() {
-    $("div.gallery-container").toggleClass("hidden");
-    
-    
-  });*/
   $("div.gallery").click(function() {
     $("#gallery-modal").modal();
   });
 
 
 //jquery for left menu
-  var leftMenuItem = $('nav.navbar-fixed-left > ul.navbar-nav > li.menu-name');
+/*  var leftMenuItem = $('nav.navbar-fixed-left > ul.navbar-nav > li.menu-name');
   leftMenuItem.hover(function() {
     $(this).children('div.left-menu-main').fadeIn(500).removeClass('hidden');
   }, function() {
     $(this).children('div.left-menu-main').fadeOut(500).addClass('hidden');
-  })
+  })*/
 
 });

@@ -1,78 +1,44 @@
-/*css for fixed navbar left*/
-
-nav.navbar-fixed-left {
-    width: 150px;
-    height: 100%;
-    position: fixed;
-    padding: 0;
+div.home-hero > div.content-block {
+    background-image: url(../img/mashrafe-disappointed.jpg);
+    background-size: cover;
     border: 0;
-    margin: 0;
-    z-index: 100;
-
-}
-
-
-nav.navbar-fixed-left + div.container {
-    margin-left: 150px;
-}
-
-nav.navbar-fixed-left > ul.navbar-nav > li.menu-name {
-    float: none;
-    display: block;
-    height: 50px;
-    width: 150px;
-    padding: 0;
-    border-bottom: 1px solid black;
-    
-}
-
-nav.navbar-fixed-left > ul.navbar-nav > li.nav-logo {
-    float: none;
-    display: block;
-    height: 50px;
-    width: 150px;
-    padding: 0;
-}
-
-nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.menu-text {
-    padding-top: 10px;
-    vertical-align: middle;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.3em;
-    
-}
-
-nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.menu-text > a {
-    text-decoration: none;
-}
-
-nav.navbar-fixed-left > ul.navbar.nav {
-    clear: both;
-    position: relative;
-}
-
-nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main {
-    position: absolute;
-    width: 600px;
-    height: 450px;
-    margin-top: -35px;
-    margin-left: 150px;
-    background-color: #fff;
-}
-
-nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main > div.left-menu-imgs, div.left-menu-img {
-    display: inline-block;
-    margin: 10px 7px;
-}
-
-div.home-hero {
-    background-image: url("./assets/img/Mashrafe_big.jpg");
-    background-color: none;
 }
 
 
 div.content-block {
     margin-bottom: 10px;
+    /*border: 1px solid gray;*/
+}
+
+/*div.content-block > img {
+    width: 100%;
+}*/
+
+div.home-hero > div.content-block div.home-hero-lead {
+    padding: 200px 20px;
+    color: white;
+}
+
+/*div.home-hero > div.content-block div.home-hero-lead > p,*/
+div.home-hero > div.content-block div.home-hero-lead > h1 {
+    text-transform: uppercase;
+}
+
+
+
+div.bannerly {
+    padding: 30px 20px;
+}
+
+div.bannerly > h2 {
+    /*background: #fff;
+    z-index: 1;*/
+}
+div.bannerly > h2::after {
+    /*content: "";
+    display: block;
     border: 1px solid gray;
+    border-bottom: 0;
+    height: 2px;*/
+
 }

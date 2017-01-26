@@ -1,0 +1,115 @@
+/*css for fixed navbar left*/
+
+nav.navbar-fixed-left {
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 100;
+    /*background-color: #fff;*/
+}
+
+
+nav.navbar-fixed-left + div.container {
+    margin-left: 150px;
+    
+}
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-name {
+    float: none;
+    display: block;
+    position: static;
+    height: 50px;
+    width: 150px;
+    padding: 0;
+    /*border-right: 1px solid black;
+    border-bottom: 1px solid black;*/
+    z-index: 100;
+    background-color: #fff;
+    
+}
+
+nav.navbar-fixed-left > ul.navbar-nav > li.nav-logo {
+    float: none;
+    display: block;
+    height: 50px;
+    width: 150px;
+    padding: 0;
+    /*border-right: 1px solid black;*/
+    background-color: #fff;
+}
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.menu-text {
+    padding-top: 15px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    
+}
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.menu-text > a {
+    text-decoration: none;
+}
+
+nav.navbar-fixed-left > ul.navbar.nav {
+    z-index: 100;
+    /*background-color: #fff;*/
+    clear: both;
+    position: relative;
+}
+
+/*nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main {
+    position: absolute;
+    display: none;
+    width: 600px;
+    height: 100vh;
+    margin-top: -35px;
+    margin-left: 150px;
+    background-color: #fff;
+}*/
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-panel/*,
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-panel > div.left-menu-main*/ {
+    position: absolute;
+    /*display: none;*/
+    width: 600px;
+    height: 80%;
+    top: 0;
+    left: -600px;
+    background-color: #fff;
+    z-index: -1;/*important for stacking order levels and contexts http://css-discuss.incutio.com/wiki/Overlapping_And_ZIndex */
+    /*transition: left 1s ease-in-out, display 1s;*/
+}
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-panel:hover,
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-panel:focus {
+    display: block;
+    left: 150px;
+    /*z-index: 90;*/
+}
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-name:hover + li.menu-panel {
+    display: block;
+    left: 150px;
+    /*z-index: 90;*/
+    -webkit-transition: left 0.6s ease-in;
+    transition: left 0.6s ease-in;
+}
+
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main > div.left-menu-imgs, div.left-menu-img {
+    display: inline-block;
+    margin: 10px 7px;
+}
+
+
+
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-name:hover > div.left-menu-main {
+    display: block;
+}
+
+/*end of css for left-menu*/
