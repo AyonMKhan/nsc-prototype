@@ -69,4 +69,10 @@ nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main > div.
     margin: 10px 7px;
 }
 
+div.left-menu-main div.row div.left-menu-img img.left-menu-img {
+    max-height: 64px;
+    max-width: 64px;
+    
+}
+
 /*end of css for left-menu*/
