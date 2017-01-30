@@ -2,740 +2,1080 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="../../favicon.ico">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-	<title>Footballer Profile</title>
+    <title>Footballer Profile</title>
 
-	<!-- CSS & JS -->
-	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="./assets/css/main.css" rel="stylesheet">
-	<link href="./assets/css/playerprofile2.css" rel="stylesheet">
-	<link href="./assets/css/megamenu.css" rel="stylesheet">
-	<script src="./assets/js/jquery-3.1.1.min.js"></script>
-	<script src="./assets/js/bootstrap.min.js"></script>
-	<script src="./assets/js/chart.js"></script>
-	<script src="./assets/js/main.js"></script>
+    <!-- CSS & JS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="./assets/css/playerprofile2.css" rel="stylesheet">
+    <link href="./assets/css/megamenu.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+    <script src="./assets/js/jquery-3.1.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/main.js"></script>
 </head>
 
 <body>
-	<div class="container">
+    <div class="container">
 
-		<div class="content-wrap">
-			<!--Content wrap for making space for footer-->
-		<div class="mega-menu-container">
-          <nav class="nav navbar-default" role="navigation">
-            <img class="nav-brand img-responsive" src="./assets/img/nsc-logo-small.jpg"/>
-            <ul class="nav navbar-nav mega-navbar">
-              <li class="mega-menu">
-                <a href="#">Sports</a>
+        <div class="content-wrap">
+            <!--Content wrap for making space for footer-->
+            <div class="mega-menu-container">
+                <nav class="nav navbar-default" role="navigation">
+                    <img class="nav-brand img-responsive" src="./assets/img/nsc-logo-small.jpg" />
+                    <ul class="nav navbar-nav mega-navbar">
+                        <li class="mega-menu">
+                            <a href="#">Sports</a>
 
-                <div class="mega-menu-main">
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="https://placehold.it/64x64"/></a>
-                      <p class="text-center">Kabadi</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/football.png"/></a>
-                      <p class="text-center">Football</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/bats-man-1.png"/></a>
-                      <p class="text-center">Cricket</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/hockey-player-silhouette.png"/></a>
-                      <p class="text-center">Hockey</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/chess-horse.png"/></a>
-                      <p class="text-center">Chess</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/swimming-man.png"/></a>
-                      <p class="text-center">Swimming</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/shooting.png"/></a>
-                      <p class="text-center">Shooting</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/archery-skill.png"/></a>
-                      <p class="text-center">Archery</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/golf.png"/></a>
-                      <p class="text-center">Golf</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/boxing-fighter.png"/></a>
-                      <p class="text-center">Boxing</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-master.png"/></a>
-                      <p class="text-center">Karate</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-high-kick.png"/></a>
-                      <p class="text-center">Tae Kwon Do</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/badminton-player.png"/></a>
-                      <p class="text-center">Badminton</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/tennis-raquet-and-ball.png"/></a>
-                      <p class="text-center">Tennis</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-ping-pong.png"/></a>
-                      <p class="text-center">Table Tennis</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/squash.png"/></a>
-                      <p class="text-center">Squash</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-cycling.png"/></a>
-                      <p class="text-center">Cycling</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/handball.png"/></a>
-                      <p class="text-center">Handball</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/volleyball-silhouette.png"/></a>
-                      <p class="text-center">Volleyball</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-basketball.png"/></a>
-                      <p class="text-center">Basketball</p>
-                    </div>
-                  </div>
-                  <div class="mega-menu-imgs">
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/athlete-hanging.png"/></a>
-                      <p class="text-center">Athletics</p>
-                    </div>
-                    <div class="mega-menu-img">
-                      <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-rugby.png"/></a>
-                      <p class="text-center">Rugby</p>
-                    </div>
-                  </div>
-                </div><!--end of div Sports mega-menu-main-->
+                            <div class="mega-menu-main text-center hidden">
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="https://placehold.it/64x64" /></a>
+                                        <p class="text-center">Kabadi</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/football.png" /></a>
+                                        <p class="text-center">Football</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/bats-man-1.png" /></a>
+                                        <p class="text-center">Cricket</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/hockey-player-silhouette.png" /></a>
+                                        <p class="text-center">Hockey</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/chess-horse.png" /></a>
+                                        <p class="text-center">Chess</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/swimming-man.png" /></a>
+                                        <p class="text-center">Swimming</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/shooting.png" /></a>
+                                        <p class="text-center">Shooting</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/archery-skill.png" /></a>
+                                        <p class="text-center">Archery</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/golf.png" /></a>
+                                        <p class="text-center">Golf</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/boxing-fighter.png" /></a>
+                                        <p class="text-center">Boxing</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-master.png" /></a>
+                                        <p class="text-center">Karate</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-high-kick.png" /></a>
+                                        <p class="text-center">Tae Kwon Do</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/badminton-player.png" /></a>
+                                        <p class="text-center">Badminton</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/tennis-raquet-and-ball.png" /></a>
+                                        <p class="text-center">Tennis</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-ping-pong.png" /></a>
+                                        <p class="text-center">Table Tennis</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/squash.png" /></a>
+                                        <p class="text-center">Squash</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-cycling.png" /></a>
+                                        <p class="text-center">Cycling</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/handball.png" /></a>
+                                        <p class="text-center">Handball</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/volleyball-silhouette.png" /></a>
+                                        <p class="text-center">Volleyball</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-basketball.png" /></a>
+                                        <p class="text-center">Basketball</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/athlete-hanging.png" /></a>
+                                        <p class="text-center">Athletics</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-rugby.png" /></a>
+                                        <p class="text-center">Rugby</p>
+                                    </div>
+                                </div>
+                            </div>
 
-              </li>
-              <li class="mega-menu">
-                <a href="#">Top Performers</a>
-                <div></div>
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#">Top Performers</a>
 
-              </li>
-              <li class="mega-menu"><a href="#">Infrastructures</a></li>
-              <li class="mega-menu"><a href="#">Federations</a></li>
-              <li class="mega-menu"><a href="#">Organizers</a></li>
-              <li class="mega-menu"><a href="#">Blog</a></li>
-            </ul>
-          </nav>
-        </div><!--end of div containing megamenu-->
+                            <div class="mega-menu-main hidden">
+                                <!-- top performers mega menu-->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="text-center">Top Performers by Sport Events</h4>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <div class="mega-menu-imgs">
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                        </div>
 
-			<!-- /Jumbotron space for banner and logo-->
-			<!--<div class="jumbotron banner-space">
+                                        <div class="mega-menu-imgs">
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/Jamal%20Bhuyan.jpg" /></a>
+                                                <p class="text-center">Jamal Bhuyan</p>
+                                                <p class="text-center">Football</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <div class="mega-menu-imgs">
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-menu-imgs">
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <div class="mega-menu-imgs">
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-menu-imgs">
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                            <div class="mega-menu-img">
+                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+                                                <p class="text-center">Mashrafe Mortaza</p>
+                                                <p class="text-center">Cricket</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                        </li>
+                        <!--end of top Performers mega menu-->
+                        <li class="mega-menu">
+                            <a href="#">Infrastructures</a>
+                            <div class="mega-menu-main hidden">
+                                <!--infrastructures mega menu-->
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <h4 class="text-center">Stadiums</h4>
+                                        <div class="mega-menu-list-items" style="margin: 0 auto;">
+                                            <ul>
+                                                <li><a href="">International Stadiums</a></li>
+                                                <li><a href="">National Stadiums</a></li>
+                                                <li><a href="">Sport-specific Stadiums</a></li>
+                                                <li><a href="">Other Stadiums</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3  text-center">
+                                        <h4 class="text-center">Gymnasiums</h4>
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Inside Dhaka</a></li>
+                                                <li><a href="">Outside Dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3  text-center">
+                                        <h4 class="text-center">Swimming Pools</h4>
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Inside Dhaka</a></li>
+                                                <li><a href="">Outside Dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3  text-center">
+                                        <h4 class="text-center">Sports Complexes</h4>
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">All Sports Complexes</a></li>
+                                                <li><a href="">Other Infrastructures</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end of div row-->
+
+                            </div>
+                            <!--end of div mega menu main-->
+                            <!--end of infrastructures mega menu-->
+
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#">Federations</a>
+                            <div class="mega-menu-main hidden">
+                                <!--federations mega menu-->
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="https://placehold.it/64x64" /></a>
+                                        <p class="text-center">Kabadi</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/football.png" /></a>
+                                        <p class="text-center">Football</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/bats-man-1.png" /></a>
+                                        <p class="text-center">Cricket</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/hockey-player-silhouette.png" /></a>
+                                        <p class="text-center">Hockey</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-imgs">
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/chess-horse.png" /></a>
+                                        <p class="text-center">Chess</p>
+                                    </div>
+                                    <div class="mega-menu-img">
+                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/swimming-man.png" /></a>
+                                        <p class="text-center">Swimming</p>
+                                    </div>
+                                </div>
+                                <div class="mega-menu-list-items">
+                                    <ul>
+                                        <li><a href="">Squash</a></li>
+                                        <li><a href="">Tennis</a></li>
+                                        <li><a href="">Table Tennis</a></li>
+                                        <li><a href="">Cycling</a></li>
+                                        <li><a href="">Rugby</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-list-items">
+                                    <ul>
+                                        <li><a href="">Shooting</a></li>
+                                        <li><a href="">Archery</a></li>
+                                        <li><a href="">Boxing</a></li>
+                                        <li><a href="">Karate</a></li>
+                                        <li><a href="">Tae Kwon Do</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-list-items">
+                                    <ul>
+                                        <li><a href="">Handball</a></li>
+                                        <li><a href="">Volleyball</a></li>
+                                        <li><a href="">Basketball</a></li>
+                                        <li><a href="">Athletics</a></li>
+                                        <li><a href="">Golf</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--end of federations mega menu-->
+
+
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#">Organizers</a>
+                            <div class="mega-menu-main hidden">
+                                <!--organizations mega menu-->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4 class="text-center">Organizers by Division</h4>
+                                    </div>
+                                    <div class="col-sm-3  text-center">
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Dhaka</a></li>
+                                                <li><a href="">Chittagong</a></li>
+                                                <li><a href="">Sylhet</a></li>
+                                                <li><a href="">Khulna</a></li>
+                                                <li><a href="">Rajshahi</a></li>
+                                                <li><a href="">Barisal</a></li>
+                                                <li><a href="">Mymensingh</a></li>
+                                                <li><a href="">Rangpur</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Barguna</a></li>
+                                                <li><a href="">Bhola</a></li>
+                                                <li><a href="">Jhalokati</a></li>
+                                                <li><a href="">Patuakhali</a></li>
+                                                <li><a href="">Pirojpur</a></li>
+                                                <li><a href="">Bandarban</a></li>
+                                                <li><a href="">Brahmanbaria</a></li>
+                                                <li><a href="">Chandpur</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end of col-md-3-->
+                                    <div class="col-sm-3  text-center">
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Comilla</a></li>
+                                                <li><a href="">Cox's Bazar</a></li>
+                                                <li><a href="">Feni</a></li>
+                                                <li><a href="">Khagrachhari</a></li>
+                                                <li><a href="">Lakshmipur</a></li>
+                                                <li><a href="">Noakhali</a></li>
+                                                <li><a href="">Rangamati</a></li>
+                                                <li><a href="">Faridpur</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Gazipur</a></li>
+                                                <li><a href="">Gopalganj</a></li>
+                                                <li><a href="">Kishoreganj</a></li>
+                                                <li><a href="">Madaripur</a></li>
+                                                <li><a href="">Manikganj</a></li>
+                                                <li><a href="">Munshiganj</a></li>
+                                                <li><a href="">Narayanganj</a></li>
+                                                <li><a href="">Narsingdi</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end of col-md-3-->
+                                    <div class="col-sm-3  text-center">
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Rajbari</a></li>
+                                                <li><a href="">Shariatpur</a></li>
+                                                <li><a href="">Tangail</a></li>
+                                                <li><a href="">Bagerhat</a></li>
+                                                <li><a href="">Chuadanga</a></li>
+                                                <li><a href="">Jessore</a></li>
+                                                <li><a href="">Jhenaidah</a></li>
+                                                <li><a href="">Kushtia</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Magura</a></li>
+                                                <li><a href="">Meherpur</a></li>
+                                                <li><a href="">Narail</a></li>
+                                                <li><a href="">Satkhira</a></li>
+                                                <li><a href="">Jamalpur</a></li>
+                                                <li><a href="">Netrakona</a></li>
+                                                <li><a href="">Sherpur</a></li>
+                                                <li><a href="">Bogra</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end of col-md-3-->
+                                    <div class="col-sm-3  text-center">
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Joypurhat</a></li>
+                                                <li><a href="">Naogaon</a></li>
+                                                <li><a href="">Natore</a></li>
+                                                <li><a href="">Chapainawabganj</a></li>
+                                                <li><a href="">Pabna</a></li>
+                                                <li><a href="">Sirajganj</a></li>
+                                                <li><a href="">Dinajpur</a></li>
+                                                <li><a href="">Gaibandha</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-list-items">
+                                            <ul>
+                                                <li><a href="">Kurigram</a></li>
+                                                <li><a href="">Lalmonirhat</a></li>
+                                                <li><a href="">Nilphamari</a></li>
+                                                <li><a href="">Panchagarh</a></li>
+                                                <li><a href="">Thakurgaon</a></li>
+                                                <li><a href="">Habiganj</a></li>
+                                                <li><a href="">Moulvibazar</a></li>
+                                                <li><a href="">Sunamganj</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end of col-md-3-->
+                                </div>
+                                <!--end of row-->
+
+                            </div>
+                        </li>
+                        <!--end of organizations mega menu-->
+
+                        <li class="mega-menu">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--end of div containing megamenu-->
+
+            <!-- /Jumbotron space for banner and logo-->
+            <!--<div class="jumbotron banner-space">
 				<img class="img-responsive" src="./assets/img/banner 1140x133.jpg" />
 			</div>-->
 
-			<!-- Content columns -->
-			<div class="container-fluid">
+            <!-- Content columns -->
+            <div class="container-fluid">
 
-				<div class="row">
+                <div class="row">
 
-					<div class="col-md-8 sports-col">
+                    <div class="col-md-8 sports-col">
 
-						<div class="highlight-chart">
-							<div class="row">
-								<div class="col-md-4">
-									<canvas id="chart-1" width="300" height="300"></canvas>
-								</div>
-								<div class="col-md-4">
-									<canvas id="chart-2" width="300" height="300"></canvas>
-								</div>
-								<div class="col-md-4">
-									<canvas id="chart-3" width="300" height="300"></canvas>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4">
-									<canvas id="chart-4" width="300" height="300"></canvas>
-								</div>
-								<div class="col-md-4">
-									<canvas id="chart-5" width="300" height="300"></canvas>
-								</div>
-								<div class="col-md-4">
-									<canvas id="chart-6" width="300" height="300"></canvas>
-								</div>
-							</div>
-						</div>
+                        <div class="highlight-chart">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <canvas id="chart-1" width="300" height="300"></canvas>
+                                </div>
+                                <div class="col-md-6">
+                                    <canvas id="chart-2" width="300" height="300"></canvas>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!--<div class="col-md-4">
+                                    <canvas id="chart-4" width="300" height="300"></canvas>
+                                </div>
+                                <div class="col-md-4">
+                                    <canvas id="chart-5" width="300" height="300"></canvas>
+                                </div>-->
+                                <div class="col-md-6">
+                                    <canvas id="chart-3" width="300" height="300"></canvas>
+                                </div>
+                                <div class="col-md-6">
+                                    <canvas id="chart-6" width="300" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
 
-						<h2 class="text-center">Statistics</h2>
-						<ul class="nav nav-tabs tabs">
-							<li class="active" data-tab="tab-1"><a href="#">International Career</a></li>
-							<li data-tab="tab-2"><a href="#">Club Career</a></li>
-							<li data-tab="tab-3"><a href="#">Career Overview</a></li>
-						</ul>
-						<div id="tab-1" class="table-responsive">
-							<table class="table">
-								<tr>
-									<th rowspan="2">Team</th>
-									<th rowspan="2">Year</th>
-									<th colspan="2">Tournament</th>
-									<th colspan="2">Friendly</th>
-									<th colspan="2">Total</th>
-								</tr>
-								<tr>
-									<th>Apps</th>
-									<th>Goals</th>
-									<th>Apps</th>
-									<th>Goals</th>
-									<th>Apps</th>
-									<th>Goals</th>
-								</tr>
-								<tr>
-									<td rowspan="3">Argentina U20</td>
-									<td>2004</td>
-									<td colspan="2">—</td>
-									<td>2</td>
-									<td>3</td>
-									<td>2</td>
-									<td>3</td>
-								</tr>
-								<tr>
-									<td>2005</td>
-									<td>16</td>
-									<td>11</td>
-									<td colspan="2">—</td>
-									<td>16</td>
-									<td>11</td>
-								</tr>
-								<tr>
-									<th>Total</th>
-									<th>16</th>
-									<th>11</th>
-									<th>2</th>
-									<th>3</th>
-									<th>18</th>
-									<th>14</th>
-								</tr>
-								<tr>
-									<td rowspan="2">Argentina U23</td>
-									<td>2008</td>
-									<td>5</td>
-									<td>2</td>
-									<td colspan="2">—</td>
-									<td>5</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<th>Total</th>
-									<th>5</th>
-									<th>2</th>
-									<th colspan="2">—</th>
-									<th>5</th>
-									<th>2</th>
-								</tr>
-								<tr>
-									<td rowspan="13">Argentina</td>
-									<td>2005</td>
-									<td>3</td>
-									<td>0</td>
-									<td>2</td>
-									<td>0</td>
-									<td>5</td>
-									<td>0</td>
-								</tr>
-								<tr>
-									<td>2006</td>
-									<td>3</td>
-									<td>1</td>
-									<td>4</td>
-									<td>1</td>
-									<td>7</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>2007</td>
-									<td>10</td>
-									<td>4</td>
-									<td>4</td>
-									<td>2</td>
-									<td>14</td>
-									<td>6</td>
-								</tr>
-								<tr>
-									<td>2008</td>
-									<td>6</td>
-									<td>1</td>
-									<td>2</td>
-									<td>1</td>
-									<td>8</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>2009</td>
-									<td>8</td>
-									<td>1</td>
-									<td>2</td>
-									<td>2</td>
-									<td>10</td>
-									<td>3</td>
-								</tr>
-								<tr>
-									<td>2010</td>
-									<td>5</td>
-									<td>0</td>
-									<td>5</td>
-									<td>2</td>
-									<td>10</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>2011</td>
-									<td>8</td>
-									<td>2</td>
-									<td>5</td>
-									<td>2</td>
-									<td>13</td>
-									<td>4</td>
-								</tr>
-								<tr>
-									<td>2012</td>
-									<td>5</td>
-									<td>5</td>
-									<td>4</td>
-									<td>7</td>
-									<td>9</td>
-									<td>12</td>
-								</tr>
-								<tr>
-									<td>2013</td>
-									<td>5</td>
-									<td>3</td>
-									<td>2</td>
-									<td>3</td>
-									<td>7</td>
-									<td>6</td>
-								</tr>
-								<tr>
-									<td>2014</td>
-									<td>7</td>
-									<td>4</td>
-									<td>7</td>
-									<td>4</td>
-									<td>14</td>
-									<td>8</td>
-								</tr>
-								<tr>
-									<td>2015</td>
-									<td>6</td>
-									<td>1</td>
-									<td>2</td>
-									<td>3</td>
-									<td>8</td>
-									<td>4</td>
-								</tr>
-								<tr>
-									<td>2016</td>
-									<td>10</td>
-									<td>8</td>
-									<td>1</td>
-									<td>0</td>
-									<td>11</td>
-									<td>8</td>
-								</tr>
-								<tr>
-									<th>Total</th>
-									<th>76</th>
-									<th>30</th>
-									<th>40</th>
-									<th>27</th>
-									<th>116</th>
-									<th>57</th>
-								</tr>
-								<tr>
-									<th colspan="2">Career total</th>
-									<th>97</th>
-									<th>43</th>
-									<th>42</th>
-									<th>30</th>
-									<th>139</th>
-									<th>73</th>
-								</tr>
-							</table>
-						</div>
-						<div id="tab-2" class="hidden table-responsive">
-							<table class="table">
-								<tr>
-									<th rowspan="2">Club</th>
-									<th rowspan="2">Season</th>
-									<th colspan="3">League</th>
-									<th colspan="2">Copa del Rey</th>
-									<th colspan="2">Champions<br />
-									League</th>
-									<th colspan="2">Other</th>
-									<th colspan="2">Total</th>
-								</tr>
-								<tr>
-									<th>Division</th>
-									<th>Apps</th>
-									<th>Goals</th>
-									<th>Apps</th>
-									<th>Goals</th>
-									<th>Apps</th>
-									<th>Goals</th>
-									<th>Apps</th>
-									<th>Goals</th>
-									<th>Apps</th>
-									<th>Goals</th>
-								</tr>
-								<tr>
-									<td rowspan="2">Barcelona C</td>
-									<td>2003–04</td>
-									<td>Tercera División</td>
-									<td>10</td>
-									<td>5</td>
-									<td colspan="2">—</td>
-									<td colspan="2">—</td>
-									<td colspan="2">—</td>
-									<td>10</td>
-									<td>5</td>
-								</tr>
-								<tr>
-									<th colspan="2">Total</th>
-									<th>10</th>
-									<th>5</th>
-									<th colspan="2">—</th>
-									<th colspan="2">—</th>
-									<th colspan="2">—</th>
-									<th>10</th>
-									<th>5</th>
-								</tr>
-								<tr>
-									<td rowspan="3">Barcelona B</td>
-									<td>2003–04</td>
-									<td rowspan="2">Segunda División B</td>
-									<td>5</td>
-									<td>0</td>
-									<td colspan="2">—</td>
-									<td colspan="2">—</td>
-									<td colspan="2">—</td>
-									<td>5</td>
-									<td>0</td>
-								</tr>
-								<tr>
-									<td>2004–05</td>
-									<td>17</td>
-									<td>6</td>
-									<td colspan="2">—</td>
-									<td colspan="2">—</td>
-									<td colspan="2">—</td>
-									<td>17</td>
-									<td>6</td>
-								</tr>
-								<tr>
-									<th colspan="2">Total</th>
-									<th>22</th>
-									<th>6</th>
-									<th colspan="2">—</th>
-									<th colspan="2">—</th>
-									<th colspan="2">—</th>
-									<th>22</th>
-									<th>6</th>
-								</tr>
-								<tr>
-									<td rowspan="14">Barcelona</td>
-									<td>2004–05</td>
-									<td rowspan="13">La Liga</td>
-									<td>7</td>
-									<td>1</td>
-									<td>1</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td colspan="2">—</td>
-									<td>9</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>2005–06</td>
-									<td>17</td>
-									<td>6</td>
-									<td>2</td>
-									<td>1</td>
-									<td>6</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>25</td>
-									<td>8</td>
-								</tr>
-								<tr>
-									<td>2006–07</td>
-									<td>26</td>
-									<td>14</td>
-									<td>2</td>
-									<td>2</td>
-									<td>5</td>
-									<td>1</td>
-									<td>3</td>
-									<td>0</td>
-									<td>36</td>
-									<td>17</td>
-								</tr>
-								<tr>
-									<td>2007–08</td>
-									<td>28</td>
-									<td>10</td>
-									<td>3</td>
-									<td>0</td>
-									<td>9</td>
-									<td>6</td>
-									<td colspan="2">—</td>
-									<td>40</td>
-									<td>16</td>
-								</tr>
-								<tr>
-									<td>2008–09</td>
-									<td>31</td>
-									<td>23</td>
-									<td>8</td>
-									<td>6</td>
-									<td>12</td>
-									<td>9</td>
-									<td colspan="2">—</td>
-									<td>51</td>
-									<td>38</td>
-								</tr>
-								<tr>
-									<td>2009–10</td>
-									<td>35</td>
-									<td>34</td>
-									<td>3</td>
-									<td>1</td>
-									<td>11</td>
-									<td>8</td>
-									<td>4</td>
-									<td>4</td>
-									<td>53</td>
-									<td>47</td>
-								</tr>
-								<tr>
-									<td>2010–11</td>
-									<td>33</td>
-									<td>31</td>
-									<td>7</td>
-									<td>7</td>
-									<td>13</td>
-									<td>12</td>
-									<td>2</td>
-									<td>3</td>
-									<td>55</td>
-									<td>53</td>
-								</tr>
-								<tr>
-									<td>2011–12</td>
-									<td>37</td>
-									<td>50</td>
-									<td>7</td>
-									<td>3</td>
-									<td>11</td>
-									<td>14</td>
-									<td>5</td>
-									<td>6</td>
-									<td>60</td>
-									<td>73</td>
-								</tr>
-								<tr>
-									<td>2012–13</td>
-									<td>32</td>
-									<td>46</td>
-									<td>5</td>
-									<td>4</td>
-									<td>11</td>
-									<td>8</td>
-									<td>2</td>
-									<td>2</td>
-									<td>50</td>
-									<td>60</td>
-								</tr>
-								<tr>
-									<td>2013–14</td>
-									<td>31</td>
-									<td>28</td>
-									<td>6</td>
-									<td>5</td>
-									<td>7</td>
-									<td>8</td>
-									<td>2</td>
-									<td>0</td>
-									<td>46</td>
-									<td>41</td>
-								</tr>
-								<tr>
-									<td>2014–15</td>
-									<td>38</td>
-									<td>43</td>
-									<td>6</td>
-									<td>5</td>
-									<td>13</td>
-									<td>10</td>
-									<td colspan="2">—</td>
-									<td>57</td>
-									<td>58</td>
-								</tr>
-								<tr>
-									<td>2015–16</td>
-									<td>33</td>
-									<td>26</td>
-									<td>5</td>
-									<td>5</td>
-									<td>7</td>
-									<td>6</td>
-									<td>4</td>
-									<td>4</td>
-									<td>49</td>
-									<td>41</td>
-								</tr>
-								<tr>
-									<td>2016–17</td>
-									<td>15</td>
-									<td>14</td>
-									<td>2</td>
-									<td>2</td>
-									<td>5</td>
-									<td>10</td>
-									<td>2</td>
-									<td>1</td>
-									<td>24</td>
-									<td>27</td>
-								</tr>
-								<tr>
-									<th colspan="2">Total</th>
-									<th>363</th>
-									<th>326</th>
-									<th>57</th>
-									<th>41</th>
-									<th>111</th>
-									<th>93</th>
-									<th>24</th>
-									<th>20</th>
-									<th>555</th>
-									<th>480</th>
-								</tr>
-								<tr>
-									<th colspan="3">Career total</th>
-									<th>395</th>
-									<th>337</th>
-									<th>57</th>
-									<th>41</th>
-									<th>111</th>
-									<th>93</th>
-									<th>24</th>
-									<th>20</th>
-									<th>587</th>
-									<th>491</th>
-								</tr>
-							</table>
+                        <h2 class="text-center">Statistics</h2>
+                        <ul class="nav nav-tabs tabs">
+                            <li class="active" data-tab="tab-1"><a href="#">International Career</a></li>
+                            <li data-tab="tab-2"><a href="#">Club Career</a></li>
+                            <li data-tab="tab-3"><a href="#">Career Overview</a></li>
+                        </ul>
+                        <div id="tab-1" class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th rowspan="2">Team</th>
+                                    <th rowspan="2">Year</th>
+                                    <th colspan="2">Tournament</th>
+                                    <th colspan="2">Friendly</th>
+                                    <th colspan="2">Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">Argentina U20</td>
+                                    <td>2004</td>
+                                    <td colspan="2">—</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>2005</td>
+                                    <td>16</td>
+                                    <td>11</td>
+                                    <td colspan="2">—</td>
+                                    <td>16</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <th>16</th>
+                                    <th>11</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>18</th>
+                                    <th>14</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Argentina U23</td>
+                                    <td>2008</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td colspan="2">—</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <th>5</th>
+                                    <th>2</th>
+                                    <th colspan="2">—</th>
+                                    <th>5</th>
+                                    <th>2</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="13">Argentina</td>
+                                    <td>2005</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>2006</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>7</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>2007</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>14</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2008</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>2009</td>
+                                    <td>8</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>10</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>2010</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>2011</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td>13</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>2012</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>2013</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>7</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2014</td>
+                                    <td>7</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>4</td>
+                                    <td>14</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>2016</td>
+                                    <td>10</td>
+                                    <td>8</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <th>76</th>
+                                    <th>30</th>
+                                    <th>40</th>
+                                    <th>27</th>
+                                    <th>116</th>
+                                    <th>57</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Career total</th>
+                                    <th>97</th>
+                                    <th>43</th>
+                                    <th>42</th>
+                                    <th>30</th>
+                                    <th>139</th>
+                                    <th>73</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tab-2" class="hidden table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th rowspan="2">Club</th>
+                                    <th rowspan="2">Season</th>
+                                    <th colspan="3">League</th>
+                                    <th colspan="2">Copa del Rey</th>
+                                    <th colspan="2">Champions
+                                        <br /> League
+                                    </th>
+                                    <th colspan="2">Other</th>
+                                    <th colspan="2">Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Division</th>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                    <th>Apps</th>
+                                    <th>Goals</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Barcelona C</td>
+                                    <td>2003–04</td>
+                                    <td>Tercera División</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                    <td colspan="2">—</td>
+                                    <td colspan="2">—</td>
+                                    <td colspan="2">—</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Total</th>
+                                    <th>10</th>
+                                    <th>5</th>
+                                    <th colspan="2">—</th>
+                                    <th colspan="2">—</th>
+                                    <th colspan="2">—</th>
+                                    <th>10</th>
+                                    <th>5</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">Barcelona B</td>
+                                    <td>2003–04</td>
+                                    <td rowspan="2">Segunda División B</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td colspan="2">—</td>
+                                    <td colspan="2">—</td>
+                                    <td colspan="2">—</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>2004–05</td>
+                                    <td>17</td>
+                                    <td>6</td>
+                                    <td colspan="2">—</td>
+                                    <td colspan="2">—</td>
+                                    <td colspan="2">—</td>
+                                    <td>17</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Total</th>
+                                    <th>22</th>
+                                    <th>6</th>
+                                    <th colspan="2">—</th>
+                                    <th colspan="2">—</th>
+                                    <th colspan="2">—</th>
+                                    <th>22</th>
+                                    <th>6</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="14">Barcelona</td>
+                                    <td>2004–05</td>
+                                    <td rowspan="13">La Liga</td>
+                                    <td>7</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td colspan="2">—</td>
+                                    <td>9</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2005–06</td>
+                                    <td>17</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>25</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>2006–07</td>
+                                    <td>26</td>
+                                    <td>14</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>36</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>2007–08</td>
+                                    <td>28</td>
+                                    <td>10</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>9</td>
+                                    <td>6</td>
+                                    <td colspan="2">—</td>
+                                    <td>40</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>2008–09</td>
+                                    <td>31</td>
+                                    <td>23</td>
+                                    <td>8</td>
+                                    <td>6</td>
+                                    <td>12</td>
+                                    <td>9</td>
+                                    <td colspan="2">—</td>
+                                    <td>51</td>
+                                    <td>38</td>
+                                </tr>
+                                <tr>
+                                    <td>2009–10</td>
+                                    <td>35</td>
+                                    <td>34</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>53</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td>2010–11</td>
+                                    <td>33</td>
+                                    <td>31</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>13</td>
+                                    <td>12</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>55</td>
+                                    <td>53</td>
+                                </tr>
+                                <tr>
+                                    <td>2011–12</td>
+                                    <td>37</td>
+                                    <td>50</td>
+                                    <td>7</td>
+                                    <td>3</td>
+                                    <td>11</td>
+                                    <td>14</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>60</td>
+                                    <td>73</td>
+                                </tr>
+                                <tr>
+                                    <td>2012–13</td>
+                                    <td>32</td>
+                                    <td>46</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>2013–14</td>
+                                    <td>31</td>
+                                    <td>28</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>46</td>
+                                    <td>41</td>
+                                </tr>
+                                <tr>
+                                    <td>2014–15</td>
+                                    <td>38</td>
+                                    <td>43</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>13</td>
+                                    <td>10</td>
+                                    <td colspan="2">—</td>
+                                    <td>57</td>
+                                    <td>58</td>
+                                </tr>
+                                <tr>
+                                    <td>2015–16</td>
+                                    <td>33</td>
+                                    <td>26</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>6</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>49</td>
+                                    <td>41</td>
+                                </tr>
+                                <tr>
+                                    <td>2016–17</td>
+                                    <td>15</td>
+                                    <td>14</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>24</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Total</th>
+                                    <th>363</th>
+                                    <th>326</th>
+                                    <th>57</th>
+                                    <th>41</th>
+                                    <th>111</th>
+                                    <th>93</th>
+                                    <th>24</th>
+                                    <th>20</th>
+                                    <th>555</th>
+                                    <th>480</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="3">Career total</th>
+                                    <th>395</th>
+                                    <th>337</th>
+                                    <th>57</th>
+                                    <th>41</th>
+                                    <th>111</th>
+                                    <th>93</th>
+                                    <th>24</th>
+                                    <th>20</th>
+                                    <th>587</th>
+                                    <th>491</th>
+                                </tr>
+                            </table>
 
-						</div>
-						<div id="tab-3" class="hidden table-responsive">
-							<table class="table">
-								<tr>
-									<th colspan="4" class="text-center" style="background-color: #b0c4de; line-height: 1.5em">Youth career</th>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">1994–2000</span></th>
-									<td colspan="3" class="text-left">Newell's Old Boys</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">2001–2004</span></th>
-									<td colspan="3">Barcelona</td>
-								</tr>
-								<tr>
-									<th colspan="4" class="text-center" style="background-color: #b0c4de; line-height: 1.5em">Senior Career</th>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left">Years</th>
-									<td><b>Team</b></td>
-									<td class="text-right"><b><abbr title="League appearances">Apps</abbr></b></td>
-									<td class="text-right"><b>(<abbr title="League goals">Gls</abbr>)</b></td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">2003–2004</span></th>
-									<td>Barcelona C</td>
-									<td class="text-right">10</td>
-									<td class="text-right">(5)</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">2004–2005</span></th>
-									<td>Barcelona B</td>
-									<td class="text-right">22</td>
-									<td class="text-right">(6)</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">2004–</span></th>
-									<td>Barcelona</td>
-									<td class="text-right">363</td>
-									<td class="text-right">(326)</td>
-								</tr>
-								<tr>
-									<th colspan="4" class="text-center" style="background-color: #b0c4de; line-height: 1.5em">National team<sup>‡</sup></th>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">2004–2005</span></th>
-									<td>Argentina U20</td>
-									<td class="text-right">18</td>
-									<td class="text-right">(14)</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">2008</span></th>
-									<td>Argentina U23</td>
-									<td class="text-right">5</td>
-									<td class="text-right">(2)</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-left"><span style="font-weight:normal">2005–</span></th>
-									<td>Argentina</td>
-									<td class="text-right">116</td>
-									<td class="text-right">(57)</td>
-								</tr>
-							</table>
-						</div>
+                        </div>
+                        <div id="tab-3" class="hidden table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="4" class="text-center" style="background-color: #b0c4de; line-height: 1.5em">Youth career</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">1994–2000</span></th>
+                                    <td colspan="3" class="text-left">Newell's Old Boys</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">2001–2004</span></th>
+                                    <td colspan="3">Barcelona</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4" class="text-center" style="background-color: #b0c4de; line-height: 1.5em">Senior Career</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left">Years</th>
+                                    <td><b>Team</b></td>
+                                    <td class="text-right"><b><abbr title="League appearances">Apps</abbr></b></td>
+                                    <td class="text-right"><b>(<abbr title="League goals">Gls</abbr>)</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">2003–2004</span></th>
+                                    <td>Barcelona C</td>
+                                    <td class="text-right">10</td>
+                                    <td class="text-right">(5)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">2004–2005</span></th>
+                                    <td>Barcelona B</td>
+                                    <td class="text-right">22</td>
+                                    <td class="text-right">(6)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">2004–</span></th>
+                                    <td>Barcelona</td>
+                                    <td class="text-right">363</td>
+                                    <td class="text-right">(326)</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4" class="text-center" style="background-color: #b0c4de; line-height: 1.5em">National team<sup>‡</sup></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">2004–2005</span></th>
+                                    <td>Argentina U20</td>
+                                    <td class="text-right">18</td>
+                                    <td class="text-right">(14)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">2008</span></th>
+                                    <td>Argentina U23</td>
+                                    <td class="text-right">5</td>
+                                    <td class="text-right">(2)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-left"><span style="font-weight:normal">2005–</span></th>
+                                    <td>Argentina</td>
+                                    <td class="text-right">116</td>
+                                    <td class="text-right">(57)</td>
+                                </tr>
+                            </table>
+                        </div>
 
-						<!--              <div class="row">
+                        <!--              <div class="row">
                 <div class="col-md-5">
 
 
@@ -746,49 +1086,49 @@
               </div>-->
 
 
-						<!--end of row inside col md 8-->
+                        <!--end of row inside col md 8-->
 
-					</div>
-					<!--end of col-md-8-->
+                    </div>
+                    <!--end of col-md-8-->
 
-					<div class="col-md-4">
-						<div class="row">
-							<div class="playerImg">
-								<img class="img-responsive" src="./assets/img/messi.jpg" />
-							</div>
-							<!--end of playerImg div-->
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="playerImg">
+                                <img class="img-responsive" src="./assets/img/messi.jpg" />
+                            </div>
+                            <!--end of playerImg div-->
 
-							<table class="table">
-								<!--<caption>Personal Information</caption>-->
-								<tr>
-									<th>Full Name</th>
-									<td>Lionel Andrés Messi</td>
-								</tr>
-								<tr>
-									<th>Born</th>
-									<td>24 June 1987</td>
-								</tr>
-								<tr>
-									<th>Place of Birth</th>
-									<td>Rosario, Argentina</td>
-								</tr>
-								<tr>
-									<th>Height</th>
-									<td>1.70 m (5 ft 7 in)</td>
-								</tr>
-								<tr>
-									<th>Playing Position</th>
-									<td>Forward</td>
-								</tr>
-								<tr>
-									<th>Current Team</th>
-									<td>Barcelona</td>
-								</tr>
-								<tr>
-									<th>Number</th>
-									<td>10</td>
-								</tr>
-							<!--</table>
+                            <table class="table">
+                                <!--<caption>Personal Information</caption>-->
+                                <tr>
+                                    <th>Full Name</th>
+                                    <td>Lionel Andrés Messi</td>
+                                </tr>
+                                <tr>
+                                    <th>Born</th>
+                                    <td>24 June 1987</td>
+                                </tr>
+                                <tr>
+                                    <th>Place of Birth</th>
+                                    <td>Rosario, Argentina</td>
+                                </tr>
+                                <tr>
+                                    <th>Height</th>
+                                    <td>1.70 m (5 ft 7 in)</td>
+                                </tr>
+                                <tr>
+                                    <th>Playing Position</th>
+                                    <td>Forward</td>
+                                </tr>
+                                <tr>
+                                    <th>Current Team</th>
+                                    <td>Barcelona</td>
+                                </tr>
+                                <tr>
+                                    <th>Number</th>
+                                    <td>10</td>
+                                </tr>
+                                <!--</table>
 
 
 							<table>
@@ -825,236 +1165,235 @@
 									<th>Last T20I</th>
 									<td>28 February 2016 v Sri Lanka</td>
 								</tr>-->
-							</table>
-						</div>
+                            </table>
+                        </div>
 
-						<div class="row">
-							<!--<h2 class="text-center">Background</h2>-->
-							<p>Lionel Andrés "Leo" Messi (Spanish pronunciation: [ljoˈnel anˈdɾes ˈmesi] ( listen); born 24 June 1987) is an Argentine professional footballer who plays as a forward for Spanish club FC Barcelona and captains the Argentina national team. Often considered the best player in the world and rated by many in the sport as the greatest of all time, Messi is the only football player in history to win five FIFA Ballons d'Or, four of which he won consecutively, and the first player to win three European Golden Shoes.[note 2] With Barcelona he has won eight La Liga titles and four UEFA Champions League titles, as well as four Copas del Rey. Both a prolific goalscorer and a creative playmaker, Messi holds the records for most goals scored in La Liga, a La Liga season (50), and a football season (82), as well as those for most assists made in La Liga and the Copa América. He has scored over 500 senior career goals for club and country.</p>
-						</div>
+                        <div class="row">
+                            <!--<h2 class="text-center">Background</h2>-->
+                            <p>Lionel Andrés "Leo" Messi (Spanish pronunciation: [ljoˈnel anˈdɾes ˈmesi] ( listen); born 24 June 1987) is an Argentine professional footballer who plays as a forward for Spanish club FC Barcelona and captains the Argentina national team. Often considered the best player in the world and rated by many in the sport as the greatest of all time, Messi is the only football player in history to win five FIFA Ballons d'Or, four of which he won consecutively, and the first player to win three European Golden Shoes.[note 2] With Barcelona he has won eight La Liga titles and four UEFA Champions League titles, as well as four Copas del Rey. Both a prolific goalscorer and a creative playmaker, Messi holds the records for most goals scored in La Liga, a La Liga season (50), and a football season (82), as well as those for most assists made in La Liga and the Copa América. He has scored over 500 senior career goals for club and country.</p>
+                        </div>
 
-					</div>
-					<!--end of col md 4-->
+                    </div>
+                    <!--end of col md 4-->
 
-				</div>
-				<!--end of div row-->
-			</div>
-			<!--end of container fluid-->
+                </div>
+                <!--end of div row-->
+            </div>
+            <!--end of container fluid-->
 
-		</div>
-		<!--end of content-wrap-->
-		<div class="horizontal-spacing"></div>
-		<!-- Site footer -->
-		<footer class="footer">
-			<div class="footer-div">
-				<p>&copy; 2016 Company, Inc.</p>
-				<p>&copy; 2016 Company, Inc.</p>
-			</div>
+        </div>
+        <!--end of content-wrap-->
+        <div class="horizontal-spacing"></div>
+        <!-- Site footer -->
+        <footer class="footer">
+            <div class="footer-div">
+                <p>&copy; 2016 Company, Inc.</p>
+                <p>&copy; 2016 Company, Inc.</p>
+            </div>
 
-		</footer>
+        </footer>
 
-	</div>
-	<!--end of container-->
+    </div>
+    <!--end of container-->
 
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-	<script>
-		var ct1 = document.getElementById("chart-1");
-		var ct2 = document.getElementById("chart-2");
-		var ct3 = document.getElementById("chart-3");
-		var ct4 = document.getElementById("chart-4");
-		var ct5 = document.getElementById("chart-5");
-		var ct6 = document.getElementById("chart-6");
-		var data1 = {
-			labels: [
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        var ct1 = document.getElementById("chart-1");
+        var ct2 = document.getElementById("chart-2");
+        var ct3 = document.getElementById("chart-3");
+        //var ct4 = document.getElementById("chart-4");
+        //var ct5 = document.getElementById("chart-5");
+        var ct6 = document.getElementById("chart-6");
+        var data1 = {
+            labels: [
 				"Friendlies",
 				"Copa America",
 				"FIFA World Cup Qualifications",
 				"FIFA World Cup Tournaments"
 			],
-			datasets: [
-				{
-					data: [27, 8, 17, 5],
-					backgroundColor: [
+            datasets: [
+                {
+                    data: [27, 8, 17, 5],
+                    backgroundColor: [
 						"#FF6384",
 						"#36A2EB",
 						"#FFCE56",
 						"#ff2354",
 					],
-					hoverBackgroundColor: [
+                    hoverBackgroundColor: [
 						"#FF6384",
 						"#36A2EB",
 						"#FFCE56",
 						"#ff2354"
 					]
 				}]
-		};
+        };
 
-		var myChart = new Chart(ct1, {
-			type: 'doughnut',
-			data: data1,
-			options: {
-				elements: {
-					arc: {
-						borderColor: "#ffffff"
-					}
-				}
-			}
-		});
+        var myChart = new Chart(ct1, {
+            type: 'doughnut',
+            data: data1,
+            options: {
+                elements: {
+                    arc: {
+                        borderColor: "#ffffff"
+                    }
+                }
+            }
+        });
 
-		var data2 = {
-			labels: ["January", "February", "March", "April", "May", "June", "July"],
-			datasets: [
-				{
-					label: "My First dataset",
-					fill: false,
-					lineTension: 0.1,
-					backgroundColor: "rgba(75,192,192,0.4)",
-					borderColor: "rgba(75,192,192,1)",
-					borderCapStyle: 'butt',
-					borderDash: [],
-					borderDashOffset: 0.0,
-					borderJoinStyle: 'miter',
-					pointBorderColor: "rgba(75,192,192,1)",
-					pointBackgroundColor: "#fff",
-					pointBorderWidth: 1,
-					pointHoverRadius: 5,
-					pointHoverBackgroundColor: "rgba(75,192,192,1)",
-					pointHoverBorderColor: "rgba(220,220,220,1)",
-					pointHoverBorderWidth: 2,
-					pointRadius: 1,
-					pointHitRadius: 10,
-					data: [65, 59, 80, 81, 56, 55, 40],
-					spanGaps: false,
+        var data2 = {
+            labels: ["League", "Copa Del Ray", "Champions League", "Other"],
+            datasets: [
+                {
+                    label: "League Appearances",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(75,192,192,0.4)",
+                    borderColor: "rgba(75,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(75,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [397, 59, 111, 24],
+                    spanGaps: false,
 				}
 			]
-		};
+        };
 
-		var myLineChart = new Chart(ct2, {
-			type: 'line',
-			data: data2,
-			options: {}
-		});
+        var myLineChart = new Chart(ct2, {
+            type: 'line',
+            data: data2,
+            options: {}
+        });
 
-		var data3 = {
-			labels: ["Domestic Cups", "International Cups", "National Team"],
-			datasets: [
-				{
-					label: "Goals Scored",
-					backgroundColor: [
+        var data3 = {
+            labels: ["Domestic Cups", "International Cups", "National Team"],
+            datasets: [
+                {
+                    label: "Goals Scored",
+                    backgroundColor: [
 						'rgba(255, 99, 132, 0.2)',
 						'rgba(54, 162, 235, 0.2)',
 						'rgba(255, 206, 86, 0.2)'
 					],
-					borderColor: [
+                    borderColor: [
 						'rgba(255,99,132,1)',
 						'rgba(54, 162, 235, 1)',
 						'rgba(255, 206, 86, 1)'
 					],
-					borderWidth: 1,
-					data: [55, 104, 59],
+                    borderWidth: 1,
+                    data: [55, 104, 59],
 				}
 			]
-		};
-		var myBarChart = new Chart(ct3, {
-			type: 'bar',
-			data: data3,
-			options: {}
-		});
+        };
+        var myBarChart = new Chart(ct3, {
+            type: 'bar',
+            data: data3,
+            options: {}
+        });
 
-		var data4 = {
-			datasets: [
-				{
-					label: 'First Dataset',
-					data: [
-						{
-							x: 20,
-							y: 30,
-							r: 15
+        var data4 = {
+            datasets: [
+                {
+                    label: 'First Dataset',
+                    data: [
+                        {
+                            x: 20,
+                            y: 30,
+                            r: 15
 						},
-						{
-							x: 40,
-							y: 10,
-							r: 10
+                        {
+                            x: 40,
+                            y: 10,
+                            r: 10
 						}
 					],
-					backgroundColor:"#FF6384",
-					hoverBackgroundColor: "#FF6384",
+                    backgroundColor: "#FF6384",
+                    hoverBackgroundColor: "#FF6384",
 				}]
-		};
+        };
 
-		var myBubbleChart = new Chart(ct4,{
-			type: 'bubble',
-			data: data4,
-			options: {}
-		});
+        /*var myBubbleChart = new Chart(ct4, {
+            type: 'bubble',
+            data: data4,
+            options: {}
+        });*/
 
-		var data5 = {
-			labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-			datasets: [
-				{
-					label: "My First dataset",
-					backgroundColor: "rgba(179,181,198,0.2)",
-					borderColor: "rgba(179,181,198,1)",
-					pointBackgroundColor: "rgba(179,181,198,1)",
-					pointBorderColor: "#fff",
-					pointHoverBackgroundColor: "#fff",
-					pointHoverBorderColor: "rgba(179,181,198,1)",
-					data: [65, 59, 90, 81, 56, 55, 40]
+        var data5 = {
+            labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+            datasets: [
+                {
+                    label: "My First dataset",
+                    backgroundColor: "rgba(179,181,198,0.2)",
+                    borderColor: "rgba(179,181,198,1)",
+                    pointBackgroundColor: "rgba(179,181,198,1)",
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(179,181,198,1)",
+                    data: [65, 59, 90, 81, 56, 55, 40]
 				},
-				{
-					label: "My Second dataset",
-					backgroundColor: "rgba(255,99,132,0.2)",
-					borderColor: "rgba(255,99,132,1)",
-					pointBackgroundColor: "rgba(255,99,132,1)",
-					pointBorderColor: "#fff",
-					pointHoverBackgroundColor: "#fff",
-					pointHoverBorderColor: "rgba(255,99,132,1)",
-					data: [28, 48, 40, 19, 96, 27, 100]
+                {
+                    label: "My Second dataset",
+                    backgroundColor: "rgba(255,99,132,0.2)",
+                    borderColor: "rgba(255,99,132,1)",
+                    pointBackgroundColor: "rgba(255,99,132,1)",
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(255,99,132,1)",
+                    data: [28, 48, 40, 19, 96, 27, 100]
 				}
 			]
-		};
+        };
 
-		var myRadarChart = new Chart(ct5, {
-			type: 'radar',
-			data: data5,
-			options: {}
-		});
+      /*  var myRadarChart = new Chart(ct5, {
+            type: 'radar',
+            data: data5,
+            options: {}
+        });*/
 
-		var data6 = {
-			datasets: [{
-				data: [
-					11,
+        var data6 = {
+            datasets: [{
+                data: [
 					16,
-					7,
-					3,
-					14
+					6,
+					76
+					//3,
+					//14
 				],
-				backgroundColor: [
+                backgroundColor: [
 					"#FF6384",
 					"#4BC0C0",
-					"#FFCE56",
-					"#E7E9ED",
-					"#36A2EB"
+					"#FFCE56"
+					//"#E7E9ED",
+					//"#36A2EB"
 				],
-				label: 'My dataset' // for legend
+                label: 'International Appearances' // for legend
 			}],
-			labels: [
-				"Red",
-				"Green",
-				"Yellow",
-				"Grey",
-				"Blue"
+            labels: [
+				"Argentina U20",
+				"Argentina U23",
+				"Argentina"
+				//"Grey",
+				//"Blue"
 			]
-		};
+        };
 
-		var myPolarChart = new Chart(ct6, {
-			data: data6,
-			type: 'polarArea',
-			options: {}
-		});
-
-	</script>
+        var myPolarChart = new Chart(ct6, {
+            data: data6,
+            type: 'polarArea',
+            options: {}
+        });
+    </script>
 </body>
 
 </html>

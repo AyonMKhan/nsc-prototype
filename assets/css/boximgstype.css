@@ -20,9 +20,22 @@ td.player {
   border: 0px;
 }
 
+div.table-responsive#tab-all > table.table > tbody > tr > td.photo > img.playerImg {
+  max-height: 40px;
+  max-width: 40px;
+}
 
 
-div.btn-group {
+
+/*div.btn-group.player-dropdown {
   vertical-align: bottom;
   float: right;
 }
+
+div.btn-group.player-dropdown::before {
+  clear: both;
+}
+
+div.btn-group.player-dropdown::after {
+  clear: both;
+}*/

@@ -1,12 +1,13 @@
 div.mega-menu-container {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .navbar-default {
-  position: relative;
-  background-color: #fff;
-  border-bottom: 2px solid black;
+    position: relative;
+    background-color: #fff;
+    border-bottom: 2px solid black;
 }
+
 
 /*.mega-navbar: hover {
   border-right: 1px solid grey;0c00b2
@@ -23,13 +24,13 @@ border-right: 1px solid grey;
 border-left: 1px solid grey;
 }*/
 
-.navbar-default .navbar-nav > li.mega-menu:hover > div.mega-menu-main {
-  display: block;
-  width: 100%;
-  visibility: visible;
-  opacity: 1;
+/*.navbar-default .navbar-nav > li.mega-menu:hover > div.mega-menu-main {
+    display: block;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}*/
 
-}
 
 /*.navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
@@ -40,60 +41,85 @@ For reference, this is what must be overwritten in Bootstrap css
 */
 
 .navbar-default .navbar-nav > li.mega-menu > div.mega-menu-main {
-  position: absolute;
-  width: inherit;
-  left: 0;
-  top: 50px;
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  overflow: hidden;
-  z-index: 1;
-  background-color: white;
-  -webkit-transition: visibility 1s linear 0.3s, opacity 1s linear 0.3s;
-  transition:  visibility 1s linear 0.3s, opacity 1s linear 0.3s;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    display: block;
+    /*visibility: hidden;
+    opacity: 0;*/
+    overflow: hidden;
+    z-index: 1;
+    background-color: white;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+/*    -webkit-transition: visibility 1s linear 0.3s, opacity 1s linear 0.3s;
+    transition: visibility 1s linear 0.3s, opacity 1s linear 0.3s;*/
 }
 
 .navbar-default .navbar-nav > li.mega-menu {
-  position: static;
+    position: static;
 }
 
-.mega-menu-imgs {
-  display: inline-block;
+div.mega-menu-imgs {
+    display: inline-block;
 }
 
-div.mega-menu-main > div.mega-menu-imgs > div.mega-menu-img {
-  margin: 7.5px 10px;
-  /*max-height: 64px;
+div.mega-menu-main div.mega-menu-imgs > div.mega-menu-img {
+    margin: 7.5px 10px;
+    /*max-height: 64px;
   max-width: 64px;*/
 }
 
-div.mega-menu-list-items {
-  display: inline-block;
+div.mega-menu-main div.mega-menu-imgs > div.mega-menu-img img {
+    margin: 0 auto;
+    max-height: 64px;
+    max-width: 64px;
+}
+div.mega-menu-main div.mega-menu-imgs > div.mega-menu-img p {
+    margin: 0;
+    padding: 0;
 }
 
-div.mega-menu-list-items > ul > li {/*css for individual links to megamenu links*/
-  list-style: none;
-  padding: 4px;
-  margin: 5px;
+div.row div.mega-menu-list-items {
+    display: inline-block;
+    margin: 0 auto;
 }
 
-div.mega-menu-list-items > ul > li > a {/*css for individual links to megamenu links*/
-  text-decoration: none;
+div.row div.mega-menu-list-items > ul {
+    list-style: none;
+    padding: 0 2px;
+    margin: 0;
+    text-align: center;
+    
 }
 
+
+div.mega-menu-list-items > ul > li {
+    /*css for individual links to megamenu links*/
+    list-style: none;
+    padding: 4px 2px;
+    margin: 5px 2px;
+}
+
+div.mega-menu-list-items > ul > li > a {
+    /*css for individual links to megamenu links*/
+    text-decoration: none;
+}
 
 img.nav-brand::before {
-  clear: both;
+    clear: both;
 }
+
 img.nav-brand {
-  float: left;
+    float: left;
 }
+
 img.nav-brand:after {
-  clear: both;
+    clear: both;
 }
 
 nav.nav.navbar-default > ul.nav.navbar-nav.mega-navbar > li.mega-menu > a {
-  font-weight: bold;
-  font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.2em;
 }
