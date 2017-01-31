@@ -43,7 +43,6 @@ nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.menu-text {
     text-decoration: none;
     text-align: center;
     font-size: 1.3em;
-    
 }
 
 nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.menu-text > a {
@@ -64,12 +63,18 @@ nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main {
     background-color: #fff;
 }
 
-nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main > div.left-menu-imgs, div.left-menu-img {
+
+
+
+
+/*these rules are probleming*/
+nav.navbar-fixed-left > ul.navbar-nav > li.menu-name > div.left-menu-main div.left-menu-imgs, div.left-menu-img {
     display: inline-block;
     margin: 10px 7px;
 }
 
-div.left-menu-main div.row div.left-menu-img img.left-menu-img {
+div.left-menu-img img.left-menu-img {
+    margin: 0 auto;
     max-height: 64px;
     max-width: 64px;
     

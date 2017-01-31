@@ -112,4 +112,18 @@ nav.navbar-fixed-left > ul.navbar-nav > li.menu-name:hover > div.left-menu-main 
     display: block;
 }
 
+
+div.left-menu-img img.left-menu-img {
+    margin: 0 auto;
+    max-height: 64px;
+    max-width: 64px;
+    
+}
+
+div.left-menu-list-items > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 /*end of css for left-menu*/
