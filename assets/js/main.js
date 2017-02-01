@@ -35,6 +35,9 @@
             $("#gallery-modal").modal();
         });
 
+        $("li.contact-us").click(function () {
+            $("#contact-modal").modal();
+        });
 
         $("ul.mega-navbar li.mega-menu").hover(function () {
                 $(this).children("div.mega-menu-main").fadeIn(500).removeClass("hidden");

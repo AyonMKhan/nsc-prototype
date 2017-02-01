@@ -96,3 +96,7 @@ div.green-shadow {
     -moz-box-shadow: 5px 5px 5px 0px rgba(35,84,36,1);
     box-shadow: 5px 5px 5px 0px rgba(35,84,36,1);
 }
+
+div.vid-embed {
+    margin: 0 auto;
+}
