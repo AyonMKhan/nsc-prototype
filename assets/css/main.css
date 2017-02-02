@@ -98,5 +98,7 @@ div.green-shadow {
 }
 
 div.vid-embed {
-    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding: 50px;
 }

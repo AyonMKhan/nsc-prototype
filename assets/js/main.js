@@ -45,6 +45,8 @@
             function () {
                 $(this).children("div.mega-menu-main").fadeOut(200).addClass("hidden");
             });
+        
+        $('[data-toggle="tooltip"]').tooltip();
 
         //jquery for left menu
         /*  var leftMenuItem = $('nav.navbar-fixed-left > ul.navbar-nav > li.menu-name');
