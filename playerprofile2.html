@@ -2,1308 +2,1451 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
 
-    <title>Swimmer Profile</title>
+	<title>Swimmer Profile</title>
 
-    <!-- CSS & JS -->
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="./assets/css/main.css" rel="stylesheet">
-    <link href="./assets/css/playerprofile2.css" rel="stylesheet">
-    <link href="./assets/css/megamenu.css" rel="stylesheet">
-    <link href="./assets/css/footer.css" rel="stylesheet">
-    <script src="./assets/js/jquery-3.1.1.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/chart.js"></script>
-    <script src="./assets/js/main.js"></script>
+	<!-- CSS & JS -->
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="./assets/css/main.css" rel="stylesheet">
+	<link href="./assets/css/playerprofile2.css" rel="stylesheet">
+	<link href="./assets/css/megamenu.css" rel="stylesheet">
+	<link href="./assets/css/footer.css" rel="stylesheet">
+	<script src="./assets/js/jquery-3.1.1.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/chart.js"></script>
+	<script src="./assets/js/main.js"></script>
 </head>
 
 <body>
-    <div class="container">
+	<div class="container">
 
-        <div class="content-wrap">
-            <!--Content wrap for making space for footer-->
-
-
-
-            <div class="mega-menu-container">
-                <nav class="nav navbar-default" role="navigation">
-                    <img class="nav-brand img-responsive" src="./assets/img/nsc-logo-small.jpg" />
-                    <ul class="nav navbar-nav mega-navbar">
-                        <li class="mega-menu">
-                            <a href="#">Sports</a>
-
-                            <div class="mega-menu-main text-center hidden">
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="https://placehold.it/64x64" /></a>
-                                        <p class="text-center">Kabadi</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/football.png" /></a>
-                                        <p class="text-center">Football</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/bats-man-1.png" /></a>
-                                        <p class="text-center">Cricket</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/hockey-player-silhouette.png" /></a>
-                                        <p class="text-center">Hockey</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/chess-horse.png" /></a>
-                                        <p class="text-center">Chess</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/swimming-man.png" /></a>
-                                        <p class="text-center">Swimming</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/shooting.png" /></a>
-                                        <p class="text-center">Shooting</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/archery-skill.png" /></a>
-                                        <p class="text-center">Archery</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/golf.png" /></a>
-                                        <p class="text-center">Golf</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/boxing-fighter.png" /></a>
-                                        <p class="text-center">Boxing</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-master.png" /></a>
-                                        <p class="text-center">Karate</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-high-kick.png" /></a>
-                                        <p class="text-center">Tae Kwon Do</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/badminton-player.png" /></a>
-                                        <p class="text-center">Badminton</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/tennis-raquet-and-ball.png" /></a>
-                                        <p class="text-center">Tennis</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-ping-pong.png" /></a>
-                                        <p class="text-center">Table Tennis</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/squash.png" /></a>
-                                        <p class="text-center">Squash</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-cycling.png" /></a>
-                                        <p class="text-center">Cycling</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/handball.png" /></a>
-                                        <p class="text-center">Handball</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/volleyball-silhouette.png" /></a>
-                                        <p class="text-center">Volleyball</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-basketball.png" /></a>
-                                        <p class="text-center">Basketball</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/athlete-hanging.png" /></a>
-                                        <p class="text-center">Athletics</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-rugby.png" /></a>
-                                        <p class="text-center">Rugby</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </li>
-                        <li class="mega-menu">
-                            <a href="#">Top Performers</a>
-
-                            <div class="mega-menu-main hidden">
-                                <!-- top performers mega menu-->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4 class="text-center">Top Performers by Sport Events</h4>
-                                    </div>
-                                    <div class="col-md-4 text-center">
-                                        <div class="mega-menu-imgs">
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="mega-menu-imgs">
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/Jamal%20Bhuyan.jpg" /></a>
-                                                <p class="text-center">Jamal Bhuyan</p>
-                                                <p class="text-center">Football</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 text-center">
-                                        <div class="mega-menu-imgs">
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="mega-menu-imgs">
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 text-center">
-                                        <div class="mega-menu-imgs">
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="mega-menu-imgs">
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                            <div class="mega-menu-img">
-                                                <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
-                                                <p class="text-center">Mashrafe Mortaza</p>
-                                                <p class="text-center">Cricket</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--end of div.row-->
+		<div class="content-wrap">
+			<!--Content wrap for making space for footer-->
 
 
 
-                            </div>
+			<div class="mega-menu-container">
+				<nav class="nav navbar-default" role="navigation">
+					<img class="nav-brand img-responsive" src="./assets/img/nsc-logo-small.jpg" />
+					<ul class="nav navbar-nav mega-navbar">
+						<li class="mega-menu">
+							<a href="#">Sports</a>
+
+							<div class="mega-menu-main text-center hidden">
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="https://placehold.it/64x64" /></a>
+										<p class="text-center">Kabadi</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/football.png" /></a>
+										<p class="text-center">Football</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/bats-man-1.png" /></a>
+										<p class="text-center">Cricket</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/hockey-player-silhouette.png" /></a>
+										<p class="text-center">Hockey</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/chess-horse.png" /></a>
+										<p class="text-center">Chess</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/swimming-man.png" /></a>
+										<p class="text-center">Swimming</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/shooting.png" /></a>
+										<p class="text-center">Shooting</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/archery-skill.png" /></a>
+										<p class="text-center">Archery</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/golf.png" /></a>
+										<p class="text-center">Golf</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/boxing-fighter.png" /></a>
+										<p class="text-center">Boxing</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-master.png" /></a>
+										<p class="text-center">Karate</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/karate-high-kick.png" /></a>
+										<p class="text-center">Tae Kwon Do</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/badminton-player.png" /></a>
+										<p class="text-center">Badminton</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/tennis-raquet-and-ball.png" /></a>
+										<p class="text-center">Tennis</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-ping-pong.png" /></a>
+										<p class="text-center">Table Tennis</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/squash.png" /></a>
+										<p class="text-center">Squash</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-cycling.png" /></a>
+										<p class="text-center">Cycling</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/handball.png" /></a>
+										<p class="text-center">Handball</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/volleyball-silhouette.png" /></a>
+										<p class="text-center">Volleyball</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-basketball.png" /></a>
+										<p class="text-center">Basketball</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/athlete-hanging.png" /></a>
+										<p class="text-center">Athletics</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/man-playing-rugby.png" /></a>
+										<p class="text-center">Rugby</p>
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li class="mega-menu">
+							<a href="#">Top Performers</a>
+
+							<div class="mega-menu-main hidden">
+								<!-- top performers mega menu-->
+								<div class="row">
+									<div class="col-12">
+										<h4 class="text-center">Top Performers by Sport Events</h4>
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="mega-menu-imgs">
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+										</div>
+
+										<div class="mega-menu-imgs">
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/Jamal%20Bhuyan.jpg" /></a>
+												<p class="text-center">Jamal Bhuyan</p>
+												<p class="text-center">Football</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="mega-menu-imgs">
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+										</div>
+
+										<div class="mega-menu-imgs">
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 text-center">
+										<div class="mega-menu-imgs">
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+										</div>
+
+										<div class="mega-menu-imgs">
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+											<div class="mega-menu-img">
+												<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/cricketers/male/Mashrafe%20Mortaza.jpg" /></a>
+												<p class="text-center">Mashrafe Mortaza</p>
+												<p class="text-center">Cricket</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<!--end of div.row-->
 
 
-                        </li>
-                        <!--end of top Performers mega menu-->
-                        <li class="mega-menu">
-                            <a href="#">Infrastructures</a>
-                            <div class="mega-menu-main hidden">
-                                <!--infrastructures mega menu-->
-                                <div class="row">
-                                    <div class="col-sm-3 text-center">
-                                        <h4 class="text-center">Stadiums</h4>
-                                        <div class="mega-menu-list-items" style="margin: 0 auto;">
-                                            <ul>
-                                                <li><a href="">International Stadiums</a></li>
-                                                <li><a href="">National Stadiums</a></li>
-                                                <li><a href="">Sport-specific Stadiums</a></li>
-                                                <li><a href="">Other Stadiums</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3  text-center">
-                                        <h4 class="text-center">Gymnasiums</h4>
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Inside Dhaka</a></li>
-                                                <li><a href="">Outside Dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3  text-center">
-                                        <h4 class="text-center">Swimming Pools</h4>
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Inside Dhaka</a></li>
-                                                <li><a href="">Outside Dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3  text-center">
-                                        <h4 class="text-center">Sports Complexes</h4>
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">All Sports Complexes</a></li>
-                                                <li><a href="">Other Infrastructures</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end of div row-->
 
-                            </div>
-                            <!--end of div mega menu main-->
-                            <!--end of infrastructures mega menu-->
-
-                        </li>
-                        <li class="mega-menu">
-                            <a href="#">Federations</a>
-                            <div class="mega-menu-main hidden">
-                                <!--federations mega menu-->
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="https://placehold.it/64x64" /></a>
-                                        <p class="text-center">Kabadi</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/football.png" /></a>
-                                        <p class="text-center">Football</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/bats-man-1.png" /></a>
-                                        <p class="text-center">Cricket</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/hockey-player-silhouette.png" /></a>
-                                        <p class="text-center">Hockey</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-imgs">
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/chess-horse.png" /></a>
-                                        <p class="text-center">Chess</p>
-                                    </div>
-                                    <div class="mega-menu-img">
-                                        <a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/swimming-man.png" /></a>
-                                        <p class="text-center">Swimming</p>
-                                    </div>
-                                </div>
-                                <div class="mega-menu-list-items">
-                                    <ul>
-                                        <li><a href="">Squash</a></li>
-                                        <li><a href="">Tennis</a></li>
-                                        <li><a href="">Table Tennis</a></li>
-                                        <li><a href="">Cycling</a></li>
-                                        <li><a href="">Rugby</a></li>
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-list-items">
-                                    <ul>
-                                        <li><a href="">Shooting</a></li>
-                                        <li><a href="">Archery</a></li>
-                                        <li><a href="">Boxing</a></li>
-                                        <li><a href="">Karate</a></li>
-                                        <li><a href="">Tae Kwon Do</a></li>
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-list-items">
-                                    <ul>
-                                        <li><a href="">Handball</a></li>
-                                        <li><a href="">Volleyball</a></li>
-                                        <li><a href="">Basketball</a></li>
-                                        <li><a href="">Athletics</a></li>
-                                        <li><a href="">Golf</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--end of federations mega menu-->
+							</div>
 
 
-                        </li>
-                        <li class="mega-menu">
-                            <a href="#">Organizers</a>
-                            <div class="mega-menu-main hidden">
-                                <!--organizations mega menu-->
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <h4 class="text-center">Organizers by Division</h4>
-                                    </div>
-                                    <div class="col-sm-3  text-center">
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Dhaka</a></li>
-                                                <li><a href="">Chittagong</a></li>
-                                                <li><a href="">Sylhet</a></li>
-                                                <li><a href="">Khulna</a></li>
-                                                <li><a href="">Rajshahi</a></li>
-                                                <li><a href="">Barisal</a></li>
-                                                <li><a href="">Mymensingh</a></li>
-                                                <li><a href="">Rangpur</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Barguna</a></li>
-                                                <li><a href="">Bhola</a></li>
-                                                <li><a href="">Jhalokati</a></li>
-                                                <li><a href="">Patuakhali</a></li>
-                                                <li><a href="">Pirojpur</a></li>
-                                                <li><a href="">Bandarban</a></li>
-                                                <li><a href="">Brahmanbaria</a></li>
-                                                <li><a href="">Chandpur</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--end of col-md-3-->
-                                    <div class="col-sm-3  text-center">
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Comilla</a></li>
-                                                <li><a href="">Cox's Bazar</a></li>
-                                                <li><a href="">Feni</a></li>
-                                                <li><a href="">Khagrachhari</a></li>
-                                                <li><a href="">Lakshmipur</a></li>
-                                                <li><a href="">Noakhali</a></li>
-                                                <li><a href="">Rangamati</a></li>
-                                                <li><a href="">Faridpur</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Gazipur</a></li>
-                                                <li><a href="">Gopalganj</a></li>
-                                                <li><a href="">Kishoreganj</a></li>
-                                                <li><a href="">Madaripur</a></li>
-                                                <li><a href="">Manikganj</a></li>
-                                                <li><a href="">Munshiganj</a></li>
-                                                <li><a href="">Narayanganj</a></li>
-                                                <li><a href="">Narsingdi</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--end of col-md-3-->
-                                    <div class="col-sm-3  text-center">
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Rajbari</a></li>
-                                                <li><a href="">Shariatpur</a></li>
-                                                <li><a href="">Tangail</a></li>
-                                                <li><a href="">Bagerhat</a></li>
-                                                <li><a href="">Chuadanga</a></li>
-                                                <li><a href="">Jessore</a></li>
-                                                <li><a href="">Jhenaidah</a></li>
-                                                <li><a href="">Kushtia</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Magura</a></li>
-                                                <li><a href="">Meherpur</a></li>
-                                                <li><a href="">Narail</a></li>
-                                                <li><a href="">Satkhira</a></li>
-                                                <li><a href="">Jamalpur</a></li>
-                                                <li><a href="">Netrakona</a></li>
-                                                <li><a href="">Sherpur</a></li>
-                                                <li><a href="">Bogra</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--end of col-md-3-->
-                                    <div class="col-sm-3  text-center">
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Joypurhat</a></li>
-                                                <li><a href="">Naogaon</a></li>
-                                                <li><a href="">Natore</a></li>
-                                                <li><a href="">Chapainawabganj</a></li>
-                                                <li><a href="">Pabna</a></li>
-                                                <li><a href="">Sirajganj</a></li>
-                                                <li><a href="">Dinajpur</a></li>
-                                                <li><a href="">Gaibandha</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mega-menu-list-items">
-                                            <ul>
-                                                <li><a href="">Kurigram</a></li>
-                                                <li><a href="">Lalmonirhat</a></li>
-                                                <li><a href="">Nilphamari</a></li>
-                                                <li><a href="">Panchagarh</a></li>
-                                                <li><a href="">Thakurgaon</a></li>
-                                                <li><a href="">Habiganj</a></li>
-                                                <li><a href="">Moulvibazar</a></li>
-                                                <li><a href="">Sunamganj</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--end of col-md-3-->
-                                </div>
-                                <!--end of row-->
+						</li>
+						<!--end of top Performers mega menu-->
+						<li class="mega-menu">
+							<a href="#">Infrastructures</a>
+							<div class="mega-menu-main hidden">
+								<!--infrastructures mega menu-->
+								<div class="row">
+									<div class="col-sm-3 text-center">
+										<h4 class="text-center">Stadiums</h4>
+										<div class="mega-menu-list-items" style="margin: 0 auto;">
+											<ul>
+												<li><a href="">International Stadiums</a></li>
+												<li><a href="">National Stadiums</a></li>
+												<li><a href="">Sport-specific Stadiums</a></li>
+												<li><a href="">Other Stadiums</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-3  text-center">
+										<h4 class="text-center">Gymnasiums</h4>
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Inside Dhaka</a></li>
+												<li><a href="">Outside Dhaka</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-3  text-center">
+										<h4 class="text-center">Swimming Pools</h4>
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Inside Dhaka</a></li>
+												<li><a href="">Outside Dhaka</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-3  text-center">
+										<h4 class="text-center">Sports Complexes</h4>
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">All Sports Complexes</a></li>
+												<li><a href="">Other Infrastructures</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--end of div row-->
 
-                            </div>
-                        </li>
-                        <!--end of organizations mega menu-->
+							</div>
+							<!--end of div mega menu main-->
+							<!--end of infrastructures mega menu-->
 
-                        <li class="mega-menu">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li class="mega-menu contact-us">
-                            <a href="#" data-toggle="modal" data-target="contact-modal">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <!--end of div containing megamenu-->
+						</li>
+						<li class="mega-menu">
+							<a href="#">Federations</a>
+							<div class="mega-menu-main hidden">
+								<!--federations mega menu-->
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="https://placehold.it/64x64" /></a>
+										<p class="text-center">Kabadi</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/football.png" /></a>
+										<p class="text-center">Football</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/bats-man-1.png" /></a>
+										<p class="text-center">Cricket</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/hockey-player-silhouette.png" /></a>
+										<p class="text-center">Hockey</p>
+									</div>
+								</div>
+								<div class="mega-menu-imgs">
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/chess-horse.png" /></a>
+										<p class="text-center">Chess</p>
+									</div>
+									<div class="mega-menu-img">
+										<a href="#"><img class="img-responsive img-rounded mega-menu-img" src="./assets/img/icons/swimming-man.png" /></a>
+										<p class="text-center">Swimming</p>
+									</div>
+								</div>
+								<div class="mega-menu-list-items">
+									<ul>
+										<li><a href="">Squash</a></li>
+										<li><a href="">Tennis</a></li>
+										<li><a href="">Table Tennis</a></li>
+										<li><a href="">Cycling</a></li>
+										<li><a href="">Rugby</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu-list-items">
+									<ul>
+										<li><a href="">Shooting</a></li>
+										<li><a href="">Archery</a></li>
+										<li><a href="">Boxing</a></li>
+										<li><a href="">Karate</a></li>
+										<li><a href="">Tae Kwon Do</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu-list-items">
+									<ul>
+										<li><a href="">Handball</a></li>
+										<li><a href="">Volleyball</a></li>
+										<li><a href="">Basketball</a></li>
+										<li><a href="">Athletics</a></li>
+										<li><a href="">Golf</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--end of federations mega menu-->
 
 
-            <!-- /Jumbotron space for banner and logo-->
-            <div class="jumbotron banner-space">
-                <img class="img-responsive" src="./assets/img/banner 1140x72.jpg" />
-            </div>
+						</li>
+						<li class="mega-menu">
+							<a href="#">Organizers</a>
+							<div class="mega-menu-main hidden">
+								<!--organizations mega menu-->
+								<div class="row">
+									<div class="col-sm-12">
+										<h4 class="text-center">Organizers by Division</h4>
+									</div>
+									<div class="col-sm-3  text-center">
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Dhaka</a></li>
+												<li><a href="">Chittagong</a></li>
+												<li><a href="">Sylhet</a></li>
+												<li><a href="">Khulna</a></li>
+												<li><a href="">Rajshahi</a></li>
+												<li><a href="">Barisal</a></li>
+												<li><a href="">Mymensingh</a></li>
+												<li><a href="">Rangpur</a></li>
+											</ul>
+										</div>
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Barguna</a></li>
+												<li><a href="">Bhola</a></li>
+												<li><a href="">Jhalokati</a></li>
+												<li><a href="">Patuakhali</a></li>
+												<li><a href="">Pirojpur</a></li>
+												<li><a href="">Bandarban</a></li>
+												<li><a href="">Brahmanbaria</a></li>
+												<li><a href="">Chandpur</a></li>
+											</ul>
+										</div>
+									</div>
+									<!--end of col-md-3-->
+									<div class="col-sm-3  text-center">
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Comilla</a></li>
+												<li><a href="">Cox's Bazar</a></li>
+												<li><a href="">Feni</a></li>
+												<li><a href="">Khagrachhari</a></li>
+												<li><a href="">Lakshmipur</a></li>
+												<li><a href="">Noakhali</a></li>
+												<li><a href="">Rangamati</a></li>
+												<li><a href="">Faridpur</a></li>
+											</ul>
+										</div>
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Gazipur</a></li>
+												<li><a href="">Gopalganj</a></li>
+												<li><a href="">Kishoreganj</a></li>
+												<li><a href="">Madaripur</a></li>
+												<li><a href="">Manikganj</a></li>
+												<li><a href="">Munshiganj</a></li>
+												<li><a href="">Narayanganj</a></li>
+												<li><a href="">Narsingdi</a></li>
+											</ul>
+										</div>
+									</div>
+									<!--end of col-md-3-->
+									<div class="col-sm-3  text-center">
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Rajbari</a></li>
+												<li><a href="">Shariatpur</a></li>
+												<li><a href="">Tangail</a></li>
+												<li><a href="">Bagerhat</a></li>
+												<li><a href="">Chuadanga</a></li>
+												<li><a href="">Jessore</a></li>
+												<li><a href="">Jhenaidah</a></li>
+												<li><a href="">Kushtia</a></li>
+											</ul>
+										</div>
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Magura</a></li>
+												<li><a href="">Meherpur</a></li>
+												<li><a href="">Narail</a></li>
+												<li><a href="">Satkhira</a></li>
+												<li><a href="">Jamalpur</a></li>
+												<li><a href="">Netrakona</a></li>
+												<li><a href="">Sherpur</a></li>
+												<li><a href="">Bogra</a></li>
+											</ul>
+										</div>
+									</div>
+									<!--end of col-md-3-->
+									<div class="col-sm-3  text-center">
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Joypurhat</a></li>
+												<li><a href="">Naogaon</a></li>
+												<li><a href="">Natore</a></li>
+												<li><a href="">Chapainawabganj</a></li>
+												<li><a href="">Pabna</a></li>
+												<li><a href="">Sirajganj</a></li>
+												<li><a href="">Dinajpur</a></li>
+												<li><a href="">Gaibandha</a></li>
+											</ul>
+										</div>
+										<div class="mega-menu-list-items">
+											<ul>
+												<li><a href="">Kurigram</a></li>
+												<li><a href="">Lalmonirhat</a></li>
+												<li><a href="">Nilphamari</a></li>
+												<li><a href="">Panchagarh</a></li>
+												<li><a href="">Thakurgaon</a></li>
+												<li><a href="">Habiganj</a></li>
+												<li><a href="">Moulvibazar</a></li>
+												<li><a href="">Sunamganj</a></li>
+											</ul>
+										</div>
+									</div>
+									<!--end of col-md-3-->
+								</div>
+								<!--end of row-->
 
-            <!-- Content columns -->
-            <div class="container-fluid">
-                <div class="row">
+							</div>
+						</li>
+						<!--end of organizations mega menu-->
 
-                    <div class="col-md-9 sports-col">
-                        <div class="row">
-                            <div class="playerImg">
-                                <img class="img-responsive" src="./assets/img/Phelps.jpg" />
-                            </div>
+						<li class="mega-menu">
+							<a href="#">Blog</a>
+						</li>
+						<li class="mega-menu contact-us">
+							<a href="#" data-toggle="modal" data-target="contact-modal">Contact Us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!--end of div containing megamenu-->
 
-                            <div class="highlight-chart">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <canvas id="chart-1" width="300" height="300"></canvas>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <canvas id="chart-2" width="300" height="300"></canvas>
-                                    </div>
-                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <canvas id="chart-3" width="300" height="300"></canvas>
-                                    </div>
-                                    <!--<div class="col-md-4">
+
+			<!-- /Jumbotron space for banner and logo-->
+			<div class="jumbotron banner-space">
+				<img class="img-responsive" src="./assets/img/banner 1140x72.jpg" />
+			</div>
+
+			<!-- Content columns -->
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-9 sports-col">
+						<div class="row">
+							<div class="playerImg img-grow gallery" data-toggle="modal" data-target="gallery-modal">
+								<a href="#" data-toggle="tooltip" data-placement="bottom" title="View Gallery">
+									<img class="img-responsive" src="./assets/img/Phelps.jpg" />
+								</a>
+							</div>
+
+							<div class="highlight-chart">
+								<div class="row">
+									<div class="col-md-6">
+										<canvas id="chart-1" width="300" height="300"></canvas>
+									</div>
+									<div class="col-md-6">
+										<canvas id="chart-2" width="300" height="300"></canvas>
+									</div>
+
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<canvas id="chart-3" width="300" height="300"></canvas>
+									</div>
+									<!--<div class="col-md-4">
                                         <canvas id="chart-4" width="300" height="300"></canvas>
                                     </div>-->
-                                    <div class="col-md-6">
-                                        <canvas id="chart-5" width="300" height="300"></canvas>
-                                    </div>
-                                    <!--<div class="col-md-4">
+									<div class="col-md-6">
+										<canvas id="chart-5" width="300" height="300"></canvas>
+									</div>
+									<!--<div class="col-md-4">
                                         <canvas id="chart-6" width="300" height="300"></canvas>
                                     </div>-->
-                                </div>
-                            </div>
+								</div>
+							</div>
 
-                            <div class="row">
-                                <div class="col-md-5">
+							<div class="row">
+								<div class="col-md-5">
 
-                                    <table class="table">
-                                        <!--<caption>Personal Information</caption>-->
-                                        <tr>
-                                            <th>Full Name</th>
-                                            <td>Michael Fred Phelps II</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Born</th>
-                                            <td>30th June 1985</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Nicknames</th>
-                                            <td>"The Baltimore Bullet", "Flying Fish"</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Height</th>
-                                            <td>6ft 4in (1.93m)</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Weight</th>
-                                            <td>194 lb (88kg)</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Strokes</th>
-                                            <td>Butterfly, individual medley, freestyle, backstroke</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Coach</th>
-                                            <td>Bob Bowman</td>
-                                        </tr>
+									<table class="table">
+										<!--<caption>Personal Information</caption>-->
+										<tr>
+											<th>Full Name</th>
+											<td>Michael Fred Phelps II</td>
+										</tr>
+										<tr>
+											<th>Born</th>
+											<td>30th June 1985</td>
+										</tr>
+										<tr>
+											<th>Nicknames</th>
+											<td>"The Baltimore Bullet", "Flying Fish"</td>
+										</tr>
+										<tr>
+											<th>Height</th>
+											<td>6ft 4in (1.93m)</td>
+										</tr>
+										<tr>
+											<th>Weight</th>
+											<td>194 lb (88kg)</td>
+										</tr>
+										<tr>
+											<th>Strokes</th>
+											<td>Butterfly, individual medley, freestyle, backstroke</td>
+										</tr>
+										<tr>
+											<th>Coach</th>
+											<td>Bob Bowman</td>
+										</tr>
 
-                                    </table>
+									</table>
 
-                                </div>
-                                <div class="col-md-7">
-                                    <h3 class="text-center">Background</h3>
-                                    <p>Michael Fred Phelps II (born June 30, 1985) is an American former competitive swimmer and the most decorated Olympian of all time, with a total of 28 medals. Phelps also holds the all-time records for Olympic gold medals (23), Olympic gold medals in individual events (13), and Olympic medals in individual events (16). In winning eight gold medals at the 2008 Beijing Games, Phelps broke fellow American swimmer Mark Spitz's record of seven first-place finishes at any single Olympic Games. At the 2012 Summer Olympics in London, Phelps won four gold and two silver medals, and at the 2016 Summer Olympics in Rio de Janeiro, he won five gold medals and one silver. This made him the most successful athlete of the Games for the fourth Olympics in a row.</p>
+								</div>
+								<div class="col-md-7">
+									<h3 class="text-center">Background</h3>
+									<p>Michael Fred Phelps II (born June 30, 1985) is an American former competitive swimmer and the most decorated Olympian of all time, with a total of 28 medals. Phelps also holds the all-time records for Olympic gold medals (23), Olympic gold medals in individual events (13), and Olympic medals in individual events (16). In winning eight gold medals at the 2008 Beijing Games, Phelps broke fellow American swimmer Mark Spitz's record of seven first-place finishes at any single Olympic Games. At the 2012 Summer Olympics in London, Phelps won four gold and two silver medals, and at the 2016 Summer Olympics in Rio de Janeiro, he won five gold medals and one silver. This made him the most successful athlete of the Games for the fourth Olympics in a row.</p>
 
-                                    <p class="see-more hidden">Phelps is the long course world record holder in the 100 meter butterfly, 200 meter butterfly, and 400 meter individual medley as well as the former long course world record holder in the 200 meter freestyle and 200 meter individual medley. He has won a total of 83 medals in major international long course competition, totaling 66 gold, 14 silver, and 3 bronze spanning the Olympics, the World, and the Pan Pacific Championships. Phelps's international titles and record-breaking performances have earned him the World Swimmer of the Year Award eight times and American Swimmer of the Year Award eleven times as well as the FINA Swimmer of the Year Award in 2012 and 2016. His unprecedented Olympic success in 2008 earned Phelps Sports Illustrated magazine's Sportsman of the Year award.</p>
-                                    <p class="see-more hidden">After the 2008 Summer Olympics, Phelps started the Michael Phelps Foundation, which focuses on growing the sport of swimming and promoting healthier lifestyles. Phelps retired following the 2012 Olympics, but in April 2014 he made a comeback. At the 2016 Summer Olympics in Rio de Janeiro, his fifth Olympics, he won five golds and one silver. Phelps was chosen to be a captain of the 2016 US Olympic team, and was also voted by his team to be the flag bearer of the United States at the 2016 Summer Olympics Parade of Nations.</p>
-                                    <p></p>
-                                    <p></p>
-                                    <p class="see-more-toggle">See more...</p>
-                                </div>
-                            </div>
-                            <!--end of row inside col md 9-->
+									<p class="see-more hidden">Phelps is the long course world record holder in the 100 meter butterfly, 200 meter butterfly, and 400 meter individual medley as well as the former long course world record holder in the 200 meter freestyle and 200 meter individual medley. He has won a total of 83 medals in major international long course competition, totaling 66 gold, 14 silver, and 3 bronze spanning the Olympics, the World, and the Pan Pacific Championships. Phelps's international titles and record-breaking performances have earned him the World Swimmer of the Year Award eight times and American Swimmer of the Year Award eleven times as well as the FINA Swimmer of the Year Award in 2012 and 2016. His unprecedented Olympic success in 2008 earned Phelps Sports Illustrated magazine's Sportsman of the Year award.</p>
+									<p class="see-more hidden">After the 2008 Summer Olympics, Phelps started the Michael Phelps Foundation, which focuses on growing the sport of swimming and promoting healthier lifestyles. Phelps retired following the 2012 Olympics, but in April 2014 he made a comeback. At the 2016 Summer Olympics in Rio de Janeiro, his fifth Olympics, he won five golds and one silver. Phelps was chosen to be a captain of the 2016 US Olympic team, and was also voted by his team to be the flag bearer of the United States at the 2016 Summer Olympics Parade of Nations.</p>
+									<p></p>
+									<p></p>
+									<p class="see-more-toggle">See more...</p>
+								</div>
+							</div>
+							<!--end of row inside col md 9-->
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2 class="text-center">Statistics</h2>
-                                    <ul class="nav nav-tabs tabs">
-                                        <li class="active" data-tab="tab-1"><a href="#">World Records</a></li>
-                                        <li data-tab="tab-2"><a href="#">Career Best Times - Long Course</a></li>
-                                        <li data-tab="tab-3"><a href="#">Career Best Times - Short Course</a></li>
-                                        <li data-tab="tab-4"><a href="#">Olympics Career</a></li>
-                                    </ul>
-                                    <div id="tab-1" class="table-responsive">
-                                        <table class="table">
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Distance</th>
-                                                <th>Event</th>
-                                                <th>Time</th>
-                                                <th>Location</th>
-                                                <th>Date</th>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly</td>
-                                                <td>1:54.92</td>
-                                                <td>Austin, Texas, US</td>
-                                                <td>March 30, 2001</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly (2)</td>
-                                                <td>1:54.58</td>
-                                                <td>Fukuoka, Japan</td>
-                                                <td>July 24, 2001</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley</td>
-                                                <td>4:11.09</td>
-                                                <td>Ft. Lauderdale, Florida, US</td>
-                                                <td>August 15, 2002</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>4 × 100 m</td>
-                                                <td>Medley relay</td>
-                                                <td>3:33.48</td>
-                                                <td>Yokohama, Japan</td>
-                                                <td>August 29, 2002</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley (2)</td>
-                                                <td>4:10.73</td>
-                                                <td>Indianapolis, Indiana, US</td>
-                                                <td>April 6, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley</td>
-                                                <td>1:57.94</td>
-                                                <td>Santa Clara, California, US</td>
-                                                <td>June 29, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>7</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly (3)</td>
-                                                <td>1:53.93</td>
-                                                <td>Barcelona, Spain</td>
-                                                <td>July 22, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>8</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley (2)</td>
-                                                <td>1:57.52</td>
-                                                <td>Barcelona, Spain</td>
-                                                <td>July 24, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>9</td>
-                                                <td>100 m</td>
-                                                <td>Butterfly</td>
-                                                <td>0:51.47</td>
-                                                <td>Barcelona, Spain</td>
-                                                <td>July 25, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley (3)</td>
-                                                <td>1:56.04</td>
-                                                <td>Barcelona, Spain</td>
-                                                <td>July 25, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>11</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley (3)</td>
-                                                <td>4:09.09</td>
-                                                <td>Barcelona, Spain</td>
-                                                <td>July 27, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley (4)</td>
-                                                <td>1:55.94</td>
-                                                <td>College Park, Maryland, US</td>
-                                                <td>August 9, 2003</td>
-                                            </tr>
-                                            <tr>
-                                                <td>13</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley (4)</td>
-                                                <td>4:08.41</td>
-                                                <td>Long Beach, California, US</td>
-                                                <td>July 7, 2004</td>
-                                            </tr>
-                                            <tr>
-                                                <td>14</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley (5)</td>
-                                                <td>4:08.26</td>
-                                                <td>Athens, Greece</td>
-                                                <td>August 14, 2004</td>
-                                            </tr>
-                                            <tr>
-                                                <td>15</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly (4)</td>
-                                                <td>1:53.80</td>
-                                                <td>Victoria, British Columbia, Canada</td>
-                                                <td>August 17, 2006</td>
-                                            </tr>
-                                            <tr>
-                                                <td>16</td>
-                                                <td>4 × 100 m</td>
-                                                <td>Freestyle relay</td>
-                                                <td>3:12.46</td>
-                                                <td>Victoria, British Columbia, Canada</td>
-                                                <td>August 19, 2006</td>
-                                            </tr>
-                                            <tr>
-                                                <td>17</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley (5)</td>
-                                                <td>1:55.84</td>
-                                                <td>Victoria, British Columbia, Canada</td>
-                                                <td>August 20, 2006</td>
-                                            </tr>
-                                            <tr>
-                                                <td>18</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly (5)</td>
-                                                <td>1:53.71</td>
-                                                <td>Columbia, Missouri, US</td>
-                                                <td>February 17, 2007</td>
-                                            </tr>
-                                            <tr>
-                                                <td>19</td>
-                                                <td>200 m</td>
-                                                <td>Freestyle</td>
-                                                <td>1:43.86</td>
-                                                <td>Melbourne, Victoria, Australia</td>
-                                                <td>March 27, 2007</td>
-                                            </tr>
-                                            <tr>
-                                                <td>20</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly (6)</td>
-                                                <td>1:52.09</td>
-                                                <td>Melbourne, Victoria, Australia</td>
-                                                <td>March 28, 2007</td>
-                                            </tr>
-                                            <tr>
-                                                <td>21</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley (6)</td>
-                                                <td>1:54.98</td>
-                                                <td>Melbourne, Victoria, Australia</td>
-                                                <td>March 29, 2007</td>
-                                            </tr>
-                                            <tr>
-                                                <td>22</td>
-                                                <td>4 × 200 m</td>
-                                                <td>Freestyle relay</td>
-                                                <td>7:03.24</td>
-                                                <td>Melbourne, Victoria, Australia</td>
-                                                <td>March 30, 2007</td>
-                                            </tr>
-                                            <tr>
-                                                <td>23</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley (6)</td>
-                                                <td>4:06.22</td>
-                                                <td>Melbourne, Victoria, Australia</td>
-                                                <td>April 1, 2007</td>
-                                            </tr>
-                                            <tr>
-                                                <td>24</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley (7)</td>
-                                                <td>4:05.25</td>
-                                                <td>Omaha, Nebraska, US</td>
-                                                <td>June 29, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>25</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley (7)</td>
-                                                <td>1:54.80</td>
-                                                <td>Omaha, Nebraska, US</td>
-                                                <td>July 4, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>26</td>
-                                                <td>400 m</td>
-                                                <td>Individual medley (8)</td>
-                                                <td>4:03.84</td>
-                                                <td>Beijing, China</td>
-                                                <td>August 10, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>27</td>
-                                                <td>4 × 100 m</td>
-                                                <td>Freestyle relay (2)</td>
-                                                <td>3:08.24</td>
-                                                <td>Beijing, China</td>
-                                                <td>August 11, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>28</td>
-                                                <td>200 m</td>
-                                                <td>Freestyle (2)</td>
-                                                <td>1:42.96</td>
-                                                <td>Beijing, China</td>
-                                                <td>August 12, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>29</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly (7)</td>
-                                                <td>1:52.03</td>
-                                                <td>Beijing, China</td>
-                                                <td>August 13, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>30</td>
-                                                <td>4 × 200 m</td>
-                                                <td>Freestyle relay (2)</td>
-                                                <td>6:58.56</td>
-                                                <td>Beijing, China</td>
-                                                <td>
-                                                    <August 13, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>31</td>
-                                                <td>200 m</td>
-                                                <td>Individual medley (8)</td>
-                                                <td>1:54.23</td>
-                                                <td>Beijing, China</td>
-                                                <td>August 15, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>32</td>
-                                                <td>4 × 100 m</td>
-                                                <td>Medley relay (2)</td>
-                                                <td>3:29.34</td>
-                                                <td>Beijing, China</td>
-                                                <td>August 17, 2008</td>
-                                            </tr>
-                                            <tr>
-                                                <td>33</td>
-                                                <td>100 m</td>
-                                                <td>Butterfly (2)</td>
-                                                <td>0:50.22</td>
-                                                <td>Indianapolis, Indiana, US</td>
-                                                <td>July 9, 2009</td>
-                                            </tr>
-                                            <tr>
-                                                <td>34</td>
-                                                <td>200 m</td>
-                                                <td>Butterfly (8)</td>
-                                                <td>1:51.51</td>
-                                                <td>Rome, Italy</td>
-                                                <td>July 29, 2009</td>
-                                            </tr>
-                                            <tr>
-                                                <td>35</td>
-                                                <td>4 × 200 m</td>
-                                                <td>Freestyle relay (3)</td>
-                                                <td>6:58.55</td>
-                                                <td>Rome, Italy</td>
-                                                <td>July 31, 2009</td>
-                                            </tr>
-                                            <tr>
-                                                <td>36</td>
-                                                <td>100 m</td>
-                                                <td>Butterfly (3)</td>
-                                                <td>0:49.82</td>
-                                                <td>Rome, Italy</td>
-                                                <td>August 1, 2009</td>
-                                            </tr>
-                                            <tr>
-                                                <td>37</td>
-                                                <td>4 × 100 m</td>
-                                                <td>Medley relay (3)</td>
-                                                <td>3:27.28</td>
-                                                <td>Rome, Italy</td>
-                                                <td>August 2, 2009</td>
-                                            </tr>
-                                            <tr>
-                                                <td>38</td>
-                                                <td>4 × 100 m</td>
-                                                <td>Medley relay (sc)</td>
-                                                <td>3:20.71</td>
-                                                <td>Manchester, United Kingdom</td>
-                                                <td>December 18, 2009</td>
-                                            </tr>
-                                            <tr>
-                                                <td>39</td>
-                                                <td>4 × 100 m</td>
-                                                <td>Freestyle relay (sc)</td>
-                                                <td>3:03.30</td>
-                                                <td>Manchester, United Kingdom</td>
-                                                <td>December 19, 2009</td>
-                                            </tr>
-                                        </table>
+							<div class="row">
+								<div class="col-md-12">
+									<h2 class="text-center">Statistics</h2>
+									<ul class="nav nav-tabs tabs">
+										<li class="active" data-tab="tab-1"><a href="#">World Records</a></li>
+										<li data-tab="tab-2"><a href="#">Career Best Times - Long Course</a></li>
+										<li data-tab="tab-3"><a href="#">Career Best Times - Short Course</a></li>
+										<li data-tab="tab-4"><a href="#">Olympics Career</a></li>
+									</ul>
+									<div id="tab-1" class="table-responsive">
+										<table class="table">
+											<tr>
+												<th>No.</th>
+												<th>Distance</th>
+												<th>Event</th>
+												<th>Time</th>
+												<th>Location</th>
+												<th>Date</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>200 m</td>
+												<td>Butterfly</td>
+												<td>1:54.92</td>
+												<td>Austin, Texas, US</td>
+												<td>March 30, 2001</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>200 m</td>
+												<td>Butterfly (2)</td>
+												<td>1:54.58</td>
+												<td>Fukuoka, Japan</td>
+												<td>July 24, 2001</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>400 m</td>
+												<td>Individual medley</td>
+												<td>4:11.09</td>
+												<td>Ft. Lauderdale, Florida, US</td>
+												<td>August 15, 2002</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>4 × 100 m</td>
+												<td>Medley relay</td>
+												<td>3:33.48</td>
+												<td>Yokohama, Japan</td>
+												<td>August 29, 2002</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>400 m</td>
+												<td>Individual medley (2)</td>
+												<td>4:10.73</td>
+												<td>Indianapolis, Indiana, US</td>
+												<td>April 6, 2003</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>200 m</td>
+												<td>Individual medley</td>
+												<td>1:57.94</td>
+												<td>Santa Clara, California, US</td>
+												<td>June 29, 2003</td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td>200 m</td>
+												<td>Butterfly (3)</td>
+												<td>1:53.93</td>
+												<td>Barcelona, Spain</td>
+												<td>July 22, 2003</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>200 m</td>
+												<td>Individual medley (2)</td>
+												<td>1:57.52</td>
+												<td>Barcelona, Spain</td>
+												<td>July 24, 2003</td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td>100 m</td>
+												<td>Butterfly</td>
+												<td>0:51.47</td>
+												<td>Barcelona, Spain</td>
+												<td>July 25, 2003</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>200 m</td>
+												<td>Individual medley (3)</td>
+												<td>1:56.04</td>
+												<td>Barcelona, Spain</td>
+												<td>July 25, 2003</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td>400 m</td>
+												<td>Individual medley (3)</td>
+												<td>4:09.09</td>
+												<td>Barcelona, Spain</td>
+												<td>July 27, 2003</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td>200 m</td>
+												<td>Individual medley (4)</td>
+												<td>1:55.94</td>
+												<td>College Park, Maryland, US</td>
+												<td>August 9, 2003</td>
+											</tr>
+											<tr>
+												<td>13</td>
+												<td>400 m</td>
+												<td>Individual medley (4)</td>
+												<td>4:08.41</td>
+												<td>Long Beach, California, US</td>
+												<td>July 7, 2004</td>
+											</tr>
+											<tr>
+												<td>14</td>
+												<td>400 m</td>
+												<td>Individual medley (5)</td>
+												<td>4:08.26</td>
+												<td>Athens, Greece</td>
+												<td>August 14, 2004</td>
+											</tr>
+											<tr>
+												<td>15</td>
+												<td>200 m</td>
+												<td>Butterfly (4)</td>
+												<td>1:53.80</td>
+												<td>Victoria, British Columbia, Canada</td>
+												<td>August 17, 2006</td>
+											</tr>
+											<tr>
+												<td>16</td>
+												<td>4 × 100 m</td>
+												<td>Freestyle relay</td>
+												<td>3:12.46</td>
+												<td>Victoria, British Columbia, Canada</td>
+												<td>August 19, 2006</td>
+											</tr>
+											<tr>
+												<td>17</td>
+												<td>200 m</td>
+												<td>Individual medley (5)</td>
+												<td>1:55.84</td>
+												<td>Victoria, British Columbia, Canada</td>
+												<td>August 20, 2006</td>
+											</tr>
+											<tr>
+												<td>18</td>
+												<td>200 m</td>
+												<td>Butterfly (5)</td>
+												<td>1:53.71</td>
+												<td>Columbia, Missouri, US</td>
+												<td>February 17, 2007</td>
+											</tr>
+											<tr>
+												<td>19</td>
+												<td>200 m</td>
+												<td>Freestyle</td>
+												<td>1:43.86</td>
+												<td>Melbourne, Victoria, Australia</td>
+												<td>March 27, 2007</td>
+											</tr>
+											<tr>
+												<td>20</td>
+												<td>200 m</td>
+												<td>Butterfly (6)</td>
+												<td>1:52.09</td>
+												<td>Melbourne, Victoria, Australia</td>
+												<td>March 28, 2007</td>
+											</tr>
+											<tr>
+												<td>21</td>
+												<td>200 m</td>
+												<td>Individual medley (6)</td>
+												<td>1:54.98</td>
+												<td>Melbourne, Victoria, Australia</td>
+												<td>March 29, 2007</td>
+											</tr>
+											<tr>
+												<td>22</td>
+												<td>4 × 200 m</td>
+												<td>Freestyle relay</td>
+												<td>7:03.24</td>
+												<td>Melbourne, Victoria, Australia</td>
+												<td>March 30, 2007</td>
+											</tr>
+											<tr>
+												<td>23</td>
+												<td>400 m</td>
+												<td>Individual medley (6)</td>
+												<td>4:06.22</td>
+												<td>Melbourne, Victoria, Australia</td>
+												<td>April 1, 2007</td>
+											</tr>
+											<tr>
+												<td>24</td>
+												<td>400 m</td>
+												<td>Individual medley (7)</td>
+												<td>4:05.25</td>
+												<td>Omaha, Nebraska, US</td>
+												<td>June 29, 2008</td>
+											</tr>
+											<tr>
+												<td>25</td>
+												<td>200 m</td>
+												<td>Individual medley (7)</td>
+												<td>1:54.80</td>
+												<td>Omaha, Nebraska, US</td>
+												<td>July 4, 2008</td>
+											</tr>
+											<tr>
+												<td>26</td>
+												<td>400 m</td>
+												<td>Individual medley (8)</td>
+												<td>4:03.84</td>
+												<td>Beijing, China</td>
+												<td>August 10, 2008</td>
+											</tr>
+											<tr>
+												<td>27</td>
+												<td>4 × 100 m</td>
+												<td>Freestyle relay (2)</td>
+												<td>3:08.24</td>
+												<td>Beijing, China</td>
+												<td>August 11, 2008</td>
+											</tr>
+											<tr>
+												<td>28</td>
+												<td>200 m</td>
+												<td>Freestyle (2)</td>
+												<td>1:42.96</td>
+												<td>Beijing, China</td>
+												<td>August 12, 2008</td>
+											</tr>
+											<tr>
+												<td>29</td>
+												<td>200 m</td>
+												<td>Butterfly (7)</td>
+												<td>1:52.03</td>
+												<td>Beijing, China</td>
+												<td>August 13, 2008</td>
+											</tr>
+											<tr>
+												<td>30</td>
+												<td>4 × 200 m</td>
+												<td>Freestyle relay (2)</td>
+												<td>6:58.56</td>
+												<td>Beijing, China</td>
+												<td>
+													<August 13, 2008</td>
+											</tr>
+											<tr>
+												<td>31</td>
+												<td>200 m</td>
+												<td>Individual medley (8)</td>
+												<td>1:54.23</td>
+												<td>Beijing, China</td>
+												<td>August 15, 2008</td>
+											</tr>
+											<tr>
+												<td>32</td>
+												<td>4 × 100 m</td>
+												<td>Medley relay (2)</td>
+												<td>3:29.34</td>
+												<td>Beijing, China</td>
+												<td>August 17, 2008</td>
+											</tr>
+											<tr>
+												<td>33</td>
+												<td>100 m</td>
+												<td>Butterfly (2)</td>
+												<td>0:50.22</td>
+												<td>Indianapolis, Indiana, US</td>
+												<td>July 9, 2009</td>
+											</tr>
+											<tr>
+												<td>34</td>
+												<td>200 m</td>
+												<td>Butterfly (8)</td>
+												<td>1:51.51</td>
+												<td>Rome, Italy</td>
+												<td>July 29, 2009</td>
+											</tr>
+											<tr>
+												<td>35</td>
+												<td>4 × 200 m</td>
+												<td>Freestyle relay (3)</td>
+												<td>6:58.55</td>
+												<td>Rome, Italy</td>
+												<td>July 31, 2009</td>
+											</tr>
+											<tr>
+												<td>36</td>
+												<td>100 m</td>
+												<td>Butterfly (3)</td>
+												<td>0:49.82</td>
+												<td>Rome, Italy</td>
+												<td>August 1, 2009</td>
+											</tr>
+											<tr>
+												<td>37</td>
+												<td>4 × 100 m</td>
+												<td>Medley relay (3)</td>
+												<td>3:27.28</td>
+												<td>Rome, Italy</td>
+												<td>August 2, 2009</td>
+											</tr>
+											<tr>
+												<td>38</td>
+												<td>4 × 100 m</td>
+												<td>Medley relay (sc)</td>
+												<td>3:20.71</td>
+												<td>Manchester, United Kingdom</td>
+												<td>December 18, 2009</td>
+											</tr>
+											<tr>
+												<td>39</td>
+												<td>4 × 100 m</td>
+												<td>Freestyle relay (sc)</td>
+												<td>3:03.30</td>
+												<td>Manchester, United Kingdom</td>
+												<td>December 19, 2009</td>
+											</tr>
+										</table>
 
-                                    </div>
-                                    <!--end of div tab-1-->
+									</div>
+									<!--end of div tab-1-->
 
-                                    <div id="tab-2" class="table-responsive hidden">
-                                        <table class="table">
-                                            <tr>
-                                                <th>Event</th>
-                                                <th>Time</th>
-                                                <th>Venue</th>
-                                                <th>Date</th>
-                                                <th>Notes</th>
-                                            </tr>
-                                            <tr>
-                                                <td>100 m freestyle</td>
-                                                <td><b>47.51</b> (r)</td>
-                                                <td>Beijing</td>
-                                                <td>August 11, 2008</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m freestyle</td>
-                                                <td><b>1:42.96</b></td>
-                                                <td>Beijing</td>
-                                                <td>August 12, 2008</td>
-                                                <td><b>AM</b>, <b>NR</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>400 m freestyle</td>
-                                                <td><b>3:47.79</b></td>
-                                                <td>Indianapolis</td>
-                                                <td>April 1, 2005</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>100 m backstroke</td>
-                                                <td><b>53.01</b></td>
-                                                <td>Indianapolis</td>
-                                                <td>August 3, 2007</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m backstroke</td>
-                                                <td><b>1:54.65</b></td>
-                                                <td>Indianapolis</td>
-                                                <td>August 1, 2007</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>100 m breaststroke</td>
-                                                <td><b>1:02.57</b></td>
-                                                <td>Columbia</td>
-                                                <td>February 17, 2008</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m breaststroke</td>
-                                                <td><b>2:11.30</b></td>
-                                                <td>San Antonio</td>
-                                                <td>August 10, 2015</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>100 m butterfly</td>
-                                                <td><b>49.82</b></td>
-                                                <td>Rome</td>
-                                                <td>August 1, 2009</td>
-                                                <td><b>AM</b>, <b>NR</b>, <b>WR</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m butterfly</td>
-                                                <td><b>1:51.51</b></td>
-                                                <td>Rome</td>
-                                                <td>July 29, 2009</td>
-                                                <td><b>AM</b>, <b>NR</b>, <b>WR</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m IM</td>
-                                                <td><b>1:54.16</b></td>
-                                                <td>Shanghai</td>
-                                                <td>July 28, 2011</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>400 m IM</td>
-                                                <td><b>4:03.84</b></td>
-                                                <td>Beijing</td>
-                                                <td>August 10, 2008</td>
-                                                <td><b>AM</b>, <b>NR</b>, <b>WR</b></td>
-                                            </tr>
-                                        </table>
+									<div id="tab-2" class="table-responsive hidden">
+										<table class="table">
+											<tr>
+												<th>Event</th>
+												<th>Time</th>
+												<th>Venue</th>
+												<th>Date</th>
+												<th>Notes</th>
+											</tr>
+											<tr>
+												<td>100 m freestyle</td>
+												<td><b>47.51</b> (r)</td>
+												<td>Beijing</td>
+												<td>August 11, 2008</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>200 m freestyle</td>
+												<td><b>1:42.96</b></td>
+												<td>Beijing</td>
+												<td>August 12, 2008</td>
+												<td><b>AM</b>, <b>NR</b></td>
+											</tr>
+											<tr>
+												<td>400 m freestyle</td>
+												<td><b>3:47.79</b></td>
+												<td>Indianapolis</td>
+												<td>April 1, 2005</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>100 m backstroke</td>
+												<td><b>53.01</b></td>
+												<td>Indianapolis</td>
+												<td>August 3, 2007</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>200 m backstroke</td>
+												<td><b>1:54.65</b></td>
+												<td>Indianapolis</td>
+												<td>August 1, 2007</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>100 m breaststroke</td>
+												<td><b>1:02.57</b></td>
+												<td>Columbia</td>
+												<td>February 17, 2008</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>200 m breaststroke</td>
+												<td><b>2:11.30</b></td>
+												<td>San Antonio</td>
+												<td>August 10, 2015</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>100 m butterfly</td>
+												<td><b>49.82</b></td>
+												<td>Rome</td>
+												<td>August 1, 2009</td>
+												<td><b>AM</b>, <b>NR</b>, <b>WR</b></td>
+											</tr>
+											<tr>
+												<td>200 m butterfly</td>
+												<td><b>1:51.51</b></td>
+												<td>Rome</td>
+												<td>July 29, 2009</td>
+												<td><b>AM</b>, <b>NR</b>, <b>WR</b></td>
+											</tr>
+											<tr>
+												<td>200 m IM</td>
+												<td><b>1:54.16</b></td>
+												<td>Shanghai</td>
+												<td>July 28, 2011</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>400 m IM</td>
+												<td><b>4:03.84</b></td>
+												<td>Beijing</td>
+												<td>August 10, 2008</td>
+												<td><b>AM</b>, <b>NR</b>, <b>WR</b></td>
+											</tr>
+										</table>
 
-                                    </div>
-                                    <!--end of div tab-2-->
-                                    <div id="tab-3" class="table-responsive hidden">
-                                        <table class="table">
-                                            <tr>
-                                                <th>Event</th>
-                                                <th>Time</th>
-                                                <th>Venue</th>
-                                                <th>Date</th>
-                                                <th>Notes</th>
-                                            </tr>
-                                            <tr>
-                                                <td>100 m freestyle</td>
-                                                <td><b>46.99</b></td>
-                                                <td>Manchester</td>
-                                                <td>December 18, 2009</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m freestyle</td>
-                                                <td><b>1:42.78</b></td>
-                                                <td>East Meadow</td>
-                                                <td>February 4, 2006</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m backstroke</td>
-                                                <td><b>1:50.34</b></td>
-                                                <td>Berlin</td>
-                                                <td>October 22, 2011</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>100 m butterfly</td>
-                                                <td><b>50.46</b></td>
-                                                <td>Manchester</td>
-                                                <td>December 18, 2009</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m butterfly</td>
-                                                <td><b>1:52.27</b></td>
-                                                <td>Melbourne</td>
-                                                <td>November 28, 2003</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>100 m IM</td>
-                                                <td><b>51.65</b></td>
-                                                <td>Berlin</td>
-                                                <td>October 22, 2011</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>200 m IM</td>
-                                                <td><b>1:51.89</b></td>
-                                                <td>Berlin</td>
-                                                <td>October 23, 2011</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>400 m IM</td>
-                                                <td><b>4:01.49</b></td>
-                                                <td>Berlin</td>
-                                                <td>October 22, 2011</td>
-                                                <td></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <!--end of div tab-3-->
+									</div>
+									<!--end of div tab-2-->
+									<div id="tab-3" class="table-responsive hidden">
+										<table class="table">
+											<tr>
+												<th>Event</th>
+												<th>Time</th>
+												<th>Venue</th>
+												<th>Date</th>
+												<th>Notes</th>
+											</tr>
+											<tr>
+												<td>100 m freestyle</td>
+												<td><b>46.99</b></td>
+												<td>Manchester</td>
+												<td>December 18, 2009</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>200 m freestyle</td>
+												<td><b>1:42.78</b></td>
+												<td>East Meadow</td>
+												<td>February 4, 2006</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>200 m backstroke</td>
+												<td><b>1:50.34</b></td>
+												<td>Berlin</td>
+												<td>October 22, 2011</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>100 m butterfly</td>
+												<td><b>50.46</b></td>
+												<td>Manchester</td>
+												<td>December 18, 2009</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>200 m butterfly</td>
+												<td><b>1:52.27</b></td>
+												<td>Melbourne</td>
+												<td>November 28, 2003</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>100 m IM</td>
+												<td><b>51.65</b></td>
+												<td>Berlin</td>
+												<td>October 22, 2011</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>200 m IM</td>
+												<td><b>1:51.89</b></td>
+												<td>Berlin</td>
+												<td>October 23, 2011</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>400 m IM</td>
+												<td><b>4:01.49</b></td>
+												<td>Berlin</td>
+												<td>October 22, 2011</td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+									<!--end of div tab-3-->
 
-                                    <div class="table-responsive hidden" id="tab-4">
-                                        <table class="table">
-                                            <!--<caption>Michael Phelps in the Olympics</caption>-->
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>2000</th>
-                                                    <th>2004</th>
-                                                    <th>2008</th>
-                                                    <th>2012</th>
-                                                    <th>2016</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>200 IM</td>
-                                                    <td>---</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold*</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>400 IM</td>
-                                                    <td>---</td>
-                                                    <td>Gold*</td>
-                                                    <td>Gold*</td>
-                                                    <td>4th</td>
-                                                    <td>---</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>100 butterfly</td>
-                                                    <td>---</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold</td>
-                                                    <td>Silver</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>200 butterfly</td>
-                                                    <td>5th</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold*</td>
-                                                    <td>Silver</td>
-                                                    <td>Gold</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>200 freestyle</td>
-                                                    <td>---</td>
-                                                    <td>Bronze</td>
-                                                    <td>Gold*</td>
-                                                    <td>---</td>
-                                                    <td>---</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4x100 free relay</td>
-                                                    <td>---</td>
-                                                    <td>Bronze</td>
-                                                    <td>Gold*</td>
-                                                    <td>Silver</td>
-                                                    <td>Gold</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4x200 free relay</td>
-                                                    <td>---</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold*</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4x100 medley relay</td>
-                                                    <td>---</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold*</td>
-                                                    <td>Gold</td>
-                                                    <td>Gold</td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <td colspan="6">* World record</td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                    <!--end of div tab-4-->
+									<div class="table-responsive hidden" id="tab-4">
+										<table class="table">
+											<!--<caption>Michael Phelps in the Olympics</caption>-->
+											<thead>
+												<tr>
+													<th></th>
+													<th>2000</th>
+													<th>2004</th>
+													<th>2008</th>
+													<th>2012</th>
+													<th>2016</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>200 IM</td>
+													<td>---</td>
+													<td>Gold</td>
+													<td>Gold*</td>
+													<td>Gold</td>
+													<td>Gold</td>
+												</tr>
+												<tr>
+													<td>400 IM</td>
+													<td>---</td>
+													<td>Gold*</td>
+													<td>Gold*</td>
+													<td>4th</td>
+													<td>---</td>
+												</tr>
+												<tr>
+													<td>100 butterfly</td>
+													<td>---</td>
+													<td>Gold</td>
+													<td>Gold</td>
+													<td>Gold</td>
+													<td>Silver</td>
+												</tr>
+												<tr>
+													<td>200 butterfly</td>
+													<td>5th</td>
+													<td>Gold</td>
+													<td>Gold*</td>
+													<td>Silver</td>
+													<td>Gold</td>
+												</tr>
+												<tr>
+													<td>200 freestyle</td>
+													<td>---</td>
+													<td>Bronze</td>
+													<td>Gold*</td>
+													<td>---</td>
+													<td>---</td>
+												</tr>
+												<tr>
+													<td>4x100 free relay</td>
+													<td>---</td>
+													<td>Bronze</td>
+													<td>Gold*</td>
+													<td>Silver</td>
+													<td>Gold</td>
+												</tr>
+												<tr>
+													<td>4x200 free relay</td>
+													<td>---</td>
+													<td>Gold</td>
+													<td>Gold*</td>
+													<td>Gold</td>
+													<td>Gold</td>
+												</tr>
+												<tr>
+													<td>4x100 medley relay</td>
+													<td>---</td>
+													<td>Gold</td>
+													<td>Gold*</td>
+													<td>Gold</td>
+													<td>Gold</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="6">* World record</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<!--end of div tab-4-->
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of col-md-9-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end of col-md-9-->
 
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="right-column">
-                                <img class="img-responsive" src="./assets/img/banner vertical.jpg" />
-                            </div>
+					<div class="col-md-3">
+						<div class="row">
+							<div class="right-column">
+								<img class="img-responsive" src="./assets/img/banner vertical.jpg" />
+							</div>
 
-                        </div>
-                    </div>
-                    <!--end of col md 4-->
+						</div>
+					</div>
+					<!--end of col md 4-->
 
-                </div>
-                <!--end of div row-->
-            </div>
-            <!--end of container fluid-->
+				</div>
+				<!--end of div row-->
+			</div>
+			<!--end of container fluid-->
 
-        </div>
-        <!--end of content-wrap-->
+		</div>
+		<!--end of content-wrap-->
 
-        <div class="horizontal-spacing"></div>
-        <!-- Site footer -->
-        <footer class="footer">
-            <div class="footer-div">
-                <p>&copy; 2016 Company, Inc.</p>
-                <p>&copy; 2016 Company, Inc.</p>
-            </div>
+		<div class="horizontal-spacing"></div>
+		<!-- Site footer -->
+		<footer class="footer">
+			<div class="footer-div">
+				<p>&copy; 2016 Company, Inc.</p>
+				<p>&copy; 2016 Company, Inc.</p>
+			</div>
 
-        </footer>
+		</footer>
 
-    </div>
-    <!--end of container-->
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-        var ct1 = document.getElementById("chart-1");
-        var ct2 = document.getElementById("chart-2");
-        var ct3 = document.getElementById("chart-3");
-        //var ct4 = document.getElementById("chart-4");
-        var ct5 = document.getElementById("chart-5");
-        //var ct6 = document.getElementById("chart-6");
-        var data1 = {
-            labels: [
+
+
+		<div class="modal fade gallery-container" id="gallery-modal">
+			<div class="modal-dialog modal-lg gallery-content">
+
+				<div class="modal-content">
+					<div class="modal-body">
+
+						<div id="playerCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#playerCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#playerCarousel" data-slide-to="1"></li>
+								<li data-target="#playerCarousel" data-slide-to="2"></li>
+								<li data-target="#playerCarousel" data-slide-to="3"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="img-responsive" src="./assets/img/MashrafeSakib.jpg" alt="Mashrafe">
+									<div class="carousel-caption">
+										<!--<h3>Mashrafe</h3>
+                      <p>Mashrafe hugging Sakib</p>-->
+									</div>
+								</div>
+
+								<div class="item">
+									<img class="img-responsive" src="./assets/img/Mashrafe-disappointed.jpg" alt="Mashrafe">
+									<div class="carousel-caption">
+										<h3>Mashrafe</h3>
+										<p>Mashrafe disappointed.</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img class="img-responsive" src="./assets/img/Mashrafe_big.jpg" alt="Mashrafe">
+									<div class="carousel-caption">
+										<h3>Mashrafe winning</h3>
+										<p>Mashrafe ftw</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="vid-embed text-center">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/OcrHoEPd-dQ" frameborder="0" allowfullscreen></iframe>
+									</div>
+
+									<!--<div class="carousel-caption">
+                                        <h3>Mashrafe FTW</h3>
+                                        <p>Mashrafe's winning performance!</p>
+                                    </div>-->
+								</div>
+							</div>
+
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#playerCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#playerCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+
+
+			</div>
+			<!--end of gallery content-->
+		</div>
+		<!--end of gallery container-->
+
+
+		<div class="modal fade contact-modal-container" id="contact-modal">
+			<div class="modal-dialog modal-lg contact-form-content">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close btn btn-danger" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title text-center">Contact Us</h4>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal" role="form" method="#" action="#">
+							<div class="form-group">
+								<label for="name" class="col-sm-2 control-label">Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-sm-2 control-label">Email</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="message" class="col-sm-2 control-label">Message</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" rows="4" name="message"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-10 col-sm-offset-2">
+									<input id="submit" name="submit" type="submit" value="Send" class="btn btn-success pull-right">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-10 col-sm-offset-2">
+									<! Will be used to display an alert to the user>
+								</div>
+							</div>
+						</form>
+
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+
+
+			</div>
+			<!--end of contact form content-->
+		</div>
+		<!--end of contact modal container-->
+
+
+
+	</div>
+	<!--end of container-->
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script>
+		var ct1 = document.getElementById("chart-1");
+		var ct2 = document.getElementById("chart-2");
+		var ct3 = document.getElementById("chart-3");
+		//var ct4 = document.getElementById("chart-4");
+		var ct5 = document.getElementById("chart-5");
+		//var ct6 = document.getElementById("chart-6");
+		var data1 = {
+			labels: [
           "1st Place",
           "2nd Place",
           "3rd Place"
         ],
-            datasets: [
-                {
-                    label: "my data",
-                    data: [66, 14, 3],
-                    backgroundColor: [
+			datasets: [
+				{
+					label: "my data",
+					data: [66, 14, 3],
+					backgroundColor: [
               "#FFD700",
               "#C0C0C0",
               "#CC9966"
             ],
-                    hoverBackgroundColor: [
+					hoverBackgroundColor: [
               "#FFD700",
               "#C0C0C0",
               "#CC9966"
             ]
           }]
-        };
+		};
 
-        var myChart = new Chart(ct1, {
-            type: 'doughnut',
-            data: data1,
-            options: {
-                elements: {
-                    arc: {
-                        borderColor: "#ffffff"
-                    }
-                }
-            }
-        });
+		var myChart = new Chart(ct1, {
+			type: 'doughnut',
+			data: data1,
+			options: {
+				elements: {
+					arc: {
+						borderColor: "#ffffff"
+					}
+				}
+			}
+		});
 
-        var data2 = {
-            labels: ["Aug 11, 2008", "Aug 12, 2008", "April 1, 2005", "Aug 3, 2007", "Aug 1, 2007", "Feb 17, 2008", "Aug 10, 2015", "Aug 1, 2009", "July 29,2009", "July 28, 2011", "Aug 10, 2008"],
-            datasets: [
-                {
-                    label: "Career Best Times - Long Course",
-                    fill: false,
-                    lineTension: 0.1,
-                    backgroundColor: "rgba(75,192,192,0.4)",
-                    borderColor: "rgba(75,192,192,1)",
-                    borderCapStyle: 'butt',
-                    borderDash: [],
-                    borderDashOffset: 0.0,
-                    borderJoinStyle: 'miter',
-                    pointBorderColor: "rgba(75,192,192,1)",
-                    pointBackgroundColor: "#fff",
-                    pointBorderWidth: 1,
-                    pointHoverRadius: 5,
-                    pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                    pointHoverBorderColor: "rgba(220,220,220,1)",
-                    pointHoverBorderWidth: 2,
-                    pointRadius: 1,
-                    pointHitRadius: 10,
-                    data: [47.51, 102.96, 227.79, 53.01, 114.65, 62.57, 131.30, 49.82, 111.51, 114.16, 243.84],
-                    spanGaps: false,
+		var data2 = {
+			labels: ["Aug 11, 2008", "Aug 12, 2008", "April 1, 2005", "Aug 3, 2007", "Aug 1, 2007", "Feb 17, 2008", "Aug 10, 2015", "Aug 1, 2009", "July 29,2009", "July 28, 2011", "Aug 10, 2008"],
+			datasets: [
+				{
+					label: "Career Best Times - Long Course",
+					fill: false,
+					lineTension: 0.1,
+					backgroundColor: "rgba(75,192,192,0.4)",
+					borderColor: "rgba(75,192,192,1)",
+					borderCapStyle: 'butt',
+					borderDash: [],
+					borderDashOffset: 0.0,
+					borderJoinStyle: 'miter',
+					pointBorderColor: "rgba(75,192,192,1)",
+					pointBackgroundColor: "#fff",
+					pointBorderWidth: 1,
+					pointHoverRadius: 5,
+					pointHoverBackgroundColor: "rgba(75,192,192,1)",
+					pointHoverBorderColor: "rgba(220,220,220,1)",
+					pointHoverBorderWidth: 2,
+					pointRadius: 1,
+					pointHitRadius: 10,
+					data: [47.51, 102.96, 227.79, 53.01, 114.65, 62.57, 131.30, 49.82, 111.51, 114.16, 243.84],
+					spanGaps: false,
           }
         ]
-        };
+		};
 
-        var myLineChart = new Chart(ct2, {
-            type: 'line',
-            data: data2,
-            options: {}
-        });
+		var myLineChart = new Chart(ct2, {
+			type: 'line',
+			data: data2,
+			options: {}
+		});
 
-        var data3 = {
-            labels: ["Dec 18, 2009", "Feb 4, 2006", "Oct 22, 2011", "Dec 18, 2009", "Nov 28, 2003", "Oct 22, 2011", "Oct 23, 2011"],
-            datasets: [
-                {
-                    label: "Career Best Times - Short Course",
-                    backgroundColor: [
+		var data3 = {
+			labels: ["Dec 18, 2009", "Feb 4, 2006", "Oct 22, 2011", "Dec 18, 2009", "Nov 28, 2003", "Oct 22, 2011", "Oct 23, 2011"],
+			datasets: [
+				{
+					label: "Career Best Times - Short Course",
+					backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',
               'rgba(255, 206, 86, 0.2)',
@@ -1311,7 +1454,7 @@
               'rgba(153, 102, 255, 0.2)',
               'rgba(255, 159, 64, 0.2)'
             ],
-                    borderColor: [
+					borderColor: [
               'rgba(255,99,132,1)',
               'rgba(54, 162, 235, 1)',
               'rgba(255, 206, 86, 1)',
@@ -1319,119 +1462,119 @@
               'rgba(153, 102, 255, 1)',
               'rgba(255, 159, 64, 1)'
             ],
-                    borderWidth: 1,
-                    data: [46.99, 102.78, 110.34, 50.46, 112.27, 51.65, 101.89],
+					borderWidth: 1,
+					data: [46.99, 102.78, 110.34, 50.46, 112.27, 51.65, 101.89],
           }
         ]
-        };
-        var myBarChart = new Chart(ct3, {
-            type: 'bar',
-            data: data3,
-            options: {}
-        });
+		};
+		var myBarChart = new Chart(ct3, {
+			type: 'bar',
+			data: data3,
+			options: {}
+		});
 
-        var data4 = {
-            datasets: [
-                {
-                    label: 'First Dataset',
-                    data: [
-                        {
-                            x: 20,
-                            y: 30,
-                            r: 15
+		var data4 = {
+			datasets: [
+				{
+					label: 'First Dataset',
+					data: [
+						{
+							x: 20,
+							y: 30,
+							r: 15
               },
-                        {
-                            x: 40,
-                            y: 10,
-                            r: 10
+						{
+							x: 40,
+							y: 10,
+							r: 10
               }
             ],
-                    backgroundColor: "#FF6384",
-                    hoverBackgroundColor: "#FF6384",
+					backgroundColor: "#FF6384",
+					hoverBackgroundColor: "#FF6384",
           }]
-        };
+		};
 
- /*       var myBubbleChart = new Chart(ct4, {
-            type: 'bubble',
-            data: data4,
-            options: {}
-        });*/
+		/*       var myBubbleChart = new Chart(ct4, {
+		           type: 'bubble',
+		           data: data4,
+		           options: {}
+		       });*/
 
-        var data5 = {
-            labels: ["O", "WC(LC)", "WC(SC)", "PPC"],
-            datasets: [
-                {
-                    label: "1st Place",
-                    backgroundColor: "rgba(255,215,0,1)",
-                    borderColor: "rgba(255,215,0,1)",
-                    pointBackgroundColor: "rgba(255,215,0,1)",
-                    pointBorderColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "rgba(255,215,0,1)",
-                    data: [23, 26, 1, 16]
+		var data5 = {
+			labels: ["O", "WC(LC)", "WC(SC)", "PPC"],
+			datasets: [
+				{
+					label: "1st Place",
+					backgroundColor: "rgba(255,215,0,1)",
+					borderColor: "rgba(255,215,0,1)",
+					pointBackgroundColor: "rgba(255,215,0,1)",
+					pointBorderColor: "#fff",
+					pointHoverBackgroundColor: "#fff",
+					pointHoverBorderColor: "rgba(255,215,0,1)",
+					data: [23, 26, 1, 16]
           },
-                {
-                    label: "2nd Place",
-                    backgroundColor: "rgba(192,192,192,1)",
-                    borderColor: "rgba(192,192,192,1)",
-                    pointBackgroundColor: "rgba(192,192,192,1)",
-                    pointBorderColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "rgba(192,192,192,1)",
-                    data: [3, 6, 0, 5]
+				{
+					label: "2nd Place",
+					backgroundColor: "rgba(192,192,192,1)",
+					borderColor: "rgba(192,192,192,1)",
+					pointBackgroundColor: "rgba(192,192,192,1)",
+					pointBorderColor: "#fff",
+					pointHoverBackgroundColor: "#fff",
+					pointHoverBorderColor: "rgba(192,192,192,1)",
+					data: [3, 6, 0, 5]
           },
-                {
-                    label: "3rd Place",
-                    backgroundColor: "rgba(204,153,102,1)",
-                    borderColor: "rgba(204,153,102,1)",
-                    pointBackgroundColor: "rgba(204,153,102,1)",
-                    pointBorderColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "rgba(204,153,102,1)",
-                    data: [2, 1, 0, 0]
+				{
+					label: "3rd Place",
+					backgroundColor: "rgba(204,153,102,1)",
+					borderColor: "rgba(204,153,102,1)",
+					pointBackgroundColor: "rgba(204,153,102,1)",
+					pointBorderColor: "#fff",
+					pointHoverBackgroundColor: "#fff",
+					pointHoverBorderColor: "rgba(204,153,102,1)",
+					data: [2, 1, 0, 0]
           }
         ]
-        };
+		};
 
-        var myRadarChart = new Chart(ct5, {
-            type: 'bar',
-            data: data5,
-            options: {}
-        });
+		var myRadarChart = new Chart(ct5, {
+			type: 'bar',
+			data: data5,
+			options: {}
+		});
 
-        var data6 = {
-            datasets: [{
-                data: [
+		var data6 = {
+			datasets: [{
+				data: [
             11,
             16,
             7,
             3,
             14
           ],
-                backgroundColor: [
+				backgroundColor: [
             "#FF6384",
             "#4BC0C0",
             "#FFCE56",
             "#E7E9ED",
             "#36A2EB"
           ],
-                label: 'My dataset' // for legend
+				label: 'My dataset' // for legend
         }],
-            labels: [
+			labels: [
           "Red",
           "Green",
           "Yellow",
           "Grey",
           "Blue"
         ]
-        };
+		};
 
-/*        var myPolarChart = new Chart(ct6, {
-            data: data6,
-            type: 'polarArea',
-            options: {}
-        });*/
-    </script>
+		/*        var myPolarChart = new Chart(ct6, {
+		            data: data6,
+		            type: 'polarArea',
+		            options: {}
+		        });*/
+	</script>
 </body>
 
 </html>

@@ -10,6 +10,10 @@ div.content-block {
     /*border: 1px solid gray;*/
 }
 
+div.content-block > img.content-img {
+	object-fit: contain;
+}
+
 /*div.content-block > img {
     width: 100%;
 }*/
